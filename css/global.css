@@ -33,7 +33,7 @@ header.active :is(ul li a , div a){color: white;}
 header.active nav ul li:is(.active ,:hover)::before{background-color: white;}
 
 /* 푸터 */
-.mainPage footer{margin-top: 160px;}
+[class$='Page']:not(.servicePage)  footer{margin-top: 160px;}
 footer{padding: 39.5px 0 75px; border-top: 1px solid #dedede;}
 footer > div{position: relative;}
 footer > div ul{display: flex; margin-bottom: 40px;}
