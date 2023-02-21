@@ -8,8 +8,8 @@
 .imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 
 /* 해더 공통 */
-:not(.mainPage) header{position: sticky;}
-header{top: 0; left: 0; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #dedede;}
+:not(.mainPage) header{position: sticky; }
+header{top: 0; left: 0; display: flex; justify-content: center; align-items: center; background-color: white; border-bottom: 1px solid #dedede;}
 header :is(h1 , div){position: absolute; top: 0; height: 100%; display: flex; align-items: center;}
 header h1{left: 30px;}
 header h1 a{width: 96px; height: 20px; background-image: url('../images/logo-color.png');}
@@ -23,7 +23,7 @@ header div a{font-size: 13px; font-weight: 700; color: #999;}
 header div a:not(:last-child){margin-right: 40px;}
 /* 해더 - 메인페이지 */
 .mainPage header{position: fixed; width: 100%;}
-header.active{border-bottom: none;}
+header.active{border-bottom: none; background-color: transparent;}
 header.active h1 a{background-image: url('../images/logo.png');}
 header.active :is(ul li a , div a){color: white;}
 header.active nav ul li:is(.active ,:hover)::before{background-color: white;}
