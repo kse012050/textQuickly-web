@@ -1,8 +1,18 @@
+/* 제목 공통 */
+.title01{font-size: 40px; font-weight: 700; line-height: 50px;}
+
+/* 컨텐츠 크기 */
+.contentSize{max-width: 1180px; margin: 0 auto;}
+
+/* 이미지 박스 */
+.imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+
 /* 해더 공통 */
-header{position: sticky; top: 0; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #dedede;}
+:not(.mainPage) header{position: sticky;}
+header{top: 0; left: 0; display: flex; justify-content: center; align-items: center; border-bottom: 1px solid #dedede;}
 header :is(h1 , div){position: absolute; top: 0; height: 100%; display: flex; align-items: center;}
 header h1{left: 30px;}
-header h1 a{width: 96px; height: 20px; background-image: url('../images/logo-color.png'); background-repeat: no-repeat; background-position: center; background-size: cover; text-indent: -9999px;}
+header h1 a{width: 96px; height: 20px; background-image: url('../images/logo-color.png');}
 header nav ul{display: flex;}
 header nav ul li a{font-size: 16px; font-weight: 700; line-height: 70px;}
 header nav ul li:not(:last-child){margin-right: 80px;}
@@ -12,8 +22,23 @@ header div{right: 30px;}
 header div a{font-size: 13px; font-weight: 700; color: #999;}
 header div a:not(:last-child){margin-right: 40px;}
 /* 해더 - 메인페이지 */
+.mainPage header{position: fixed; width: 100%;}
 header.active{border-bottom: none;}
 header.active h1 a{background-image: url('../images/logo.png');}
 header.active :is(ul li a , div a){color: white;}
 header.active nav ul li:is(.active ,:hover)::before{background-color: white;}
 
+/* 푸터 */
+footer{padding: 39.5px 0 75px; border-top: 1px solid #dedede; margin-top: 160px;}
+footer > div{position: relative;}
+footer > div ul{display: flex; margin-bottom: 40px;}
+footer > div ul li:not(:last-child){margin-right: 30px;}
+footer > div ul li a{font-size: 14px; font-weight: 700;}
+footer > div ul li:first-child a{color: #666;}
+footer > div h2{max-width: 96px; margin-bottom: 20px;}
+footer > div h2 img{width: 100%;}
+footer > div address{display: flex; flex-wrap: wrap; max-width: 495px; gap: 12px 20px;}
+footer > div address p{font-size: 13px; font-weight: 500; color: #666;}
+footer > div div{position: absolute; right: 0; bottom: 0;}
+footer > div div p{font-size: 13px; font-weight: 500; margin-bottom: 15px;}
+footer > div div a{width: 172px; line-height: 40px; font-size: 13px; font-weight: 800; color: white; text-align: center; background-color: #2de09f; border-radius: 6px;}
