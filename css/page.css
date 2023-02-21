@@ -33,3 +33,74 @@
 .mainPage .eventArea ul li a{display: block;}
 .mainPage .eventArea ul li .imgBox{height: 260px; border: 1px solid #dedede; margin-bottom: 25px;}
 .mainPage .eventArea ul li strong{margin-bottom: 12px;}
+
+
+/* 서비스 페이지 */
+/* 서비스 페이지 공통*/
+.servicePage section:not(:last-of-type){padding-bottom: 120px;}
+.servicePage section:nth-of-type(2n){background-color: #f8f8f8;}
+
+/* 서비스 페이지 - 홍보 */
+.servicePage .promotionArea{padding-top: 100px; text-align: center;}
+.servicePage .promotionArea h2{max-width: 520px; line-height: 50px; margin: 0 auto 50px;}
+.servicePage .promotionArea ul{display: flex; gap: 5px;}
+.servicePage .promotionArea ul li{flex: 1;}
+.servicePage .promotionArea ul li img{width: 100%; margin-bottom: 40px;}
+.servicePage .promotionArea ul li strong{display: block; font-size: 22px; font-weight: 700; line-height: 26px; margin-bottom: 20px;}
+.servicePage .promotionArea ul li p{font-size: 15px; font-weight: 400; color: #999; line-height: 22px; margin-bottom: 20px;}
+.servicePage .promotionArea ul li mark{font-size: 40px; font-weight: 700; display: flex; justify-content: center; align-items: flex-end; }
+.servicePage .promotionArea ul li mark::after{content: '원'; font-size: 20px; font-weight: 700; margin-bottom: 7px; margin-left: 4px;}
+
+/* 서비스 페이지 - 발송서비스 , 자동환불 , 쉬운~ 공통 */
+.servicePage :is(.sendArea , .refundArea , .eagyArea){padding-top: 120px;}
+
+/* 서비스 페이지 - 발송서비스 */
+.servicePage .sendArea > div{display: flex; justify-content: space-between;}
+.servicePage .sendArea > div h2{max-width: 295px;}
+.servicePage .sendArea > div ul{display: flex; align-items: flex-start; gap: 60px;}
+.servicePage .sendArea > div ul li{width: 220px; font-weight: 700;  box-shadow: 10px 20px 30px 0 rgba(0, 0, 0, 0.07);}
+.servicePage .sendArea > div ul li:nth-child(1){margin-top: 60px;}
+.servicePage .sendArea > div ul li:nth-child(2){margin-top: 30px;}
+.servicePage .sendArea > div ul li > div{display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.servicePage .sendArea > div ul li div:not(:last-child) strong{font-size: 26px;}
+.servicePage .sendArea > div ul li span{font-size: 16px;}
+.servicePage .sendArea > div ul li div:nth-child(1){height: 100px; background-color: #2de09f; color: white;}
+.servicePage .sendArea > div ul li div:nth-child(1) strong{margin-bottom: 6px;}
+.servicePage .sendArea > div ul li > *:not(:first-child){background-color: white;}
+.servicePage .sendArea > div ul li div:nth-child(2){height: 90px;}
+.servicePage .sendArea > div ul li div:nth-child(2) strong::before{content: ''; display: inline-block; width: 16px; height: 16px; background: url('../images/icon-plus.png') no-repeat center / cover;}
+.servicePage .sendArea > div ul li div:nth-child(2) strong span{margin: 0 8px;}
+.servicePage .sendArea > div ul li div:nth-child(3){height: 80px; width: calc(100% + 40px); transform: translateX(-20px); border: 1px solid #2de09f; box-sizing: border-box;}
+.servicePage .sendArea > div ul li div:nth-child(3) mark{display: flex; justify-content: center; align-items: flex-end; font-size: 26px;}
+.servicePage .sendArea > div ul li div:nth-child(4){height: 130px;}
+.servicePage .sendArea > div ul li div:nth-child(4) > span{margin-bottom: 6px;}
+.servicePage .sendArea > div ul li div:nth-child(4) strong{font-size: 30px;}
+
+/* 서비스 페이지 - 발송실패 자동환불 */
+.servicePage .refundArea{min-height: 480px; background: url('../images/service-refundImg.png') no-repeat center right / 800px;}
+.servicePage .refundArea h2{max-width: 280px; margin-bottom: 40px;}
+.servicePage .refundArea mark{font-size: 18px; font-weight: 700;}
+
+/* 서비스 페이지 - 쉬운 ~ 스마트 */
+.eagyArea h2{text-align: center; margin-bottom: 60px;}
+.eagyArea .serviceSlider{max-width: 1860px; padding: 0 50px; box-sizing: border-box; margin: 0 auto;}
+.eagyArea .serviceSlider .swiper-slide{width: 300px; text-align: center; padding: 150px 0 40px; background-color: white; box-sizing: border-box; background-repeat: no-repeat; background-position: center top 20px; background-size: 140px; position: relative;}
+.eagyArea .serviceSlider .swiper-slide:not(:last-child):after{content: ''; width: 30px; height: 50px; position: absolute; right: -45px; top: 50%; transform: translateY(-50%); background: url('../images/icon-arrow-right.png') no-repeat center / cover;}
+.eagyArea .serviceSlider .swiper-slide:nth-child(1){background-image: url('../images/service-eageIcon01.png');}
+.eagyArea .serviceSlider .swiper-slide:nth-child(2){background-image: url('../images/service-eageIcon02.png');}
+.eagyArea .serviceSlider .swiper-slide:nth-child(3){background-image: url('../images/service-eageIcon03.png');}
+.eagyArea .serviceSlider .swiper-slide:nth-child(4){background-image: url('../images/service-eageIcon04.png');}
+.eagyArea .serviceSlider .swiper-slide:nth-child(5){background-image: url('../images/service-eageIcon05.png');}
+.eagyArea .serviceSlider .swiper-slide strong{display: block; font-size: 18px; font-weight: 700; line-height: 21px; margin-bottom: 20px;}
+.eagyArea .serviceSlider .swiper-slide p{font-size: 15px; font-weight: 400; line-height: 22px;}
+.eagyArea .serviceSlider .swiper-scrollbar{position: static; margin-top: 60px; height: 3px; background-color: transparent;}
+.eagyArea .serviceSlider .swiper-scrollbar .swiper-scrollbar-drag{background-color: #2de09f;}
+
+/* 서비스 페이지 - 최저가 비즈니스 문자 */
+.lowestArea{background: url('../images/service-bg.png') no-repeat center / cover;}
+.lowestArea > div{display: flex; justify-content: space-between; align-items: center;}
+.lowestArea > div div{padding: 0 100px;  text-align: center;}
+.lowestArea > div div h2{min-width: 331px; color: white; margin-bottom: 30px;}
+.lowestArea > div div h2 small{display: block; font-size: 26px; margin-bottom: 10px;}
+.lowestArea > div div a{font-size: 16px; font-weight: 700; color: #2de09f; text-align: center; width: 200px; line-height: 50px; background-color: white; border-radius: 6px;}
+.lowestArea > div img{width: 630px;}

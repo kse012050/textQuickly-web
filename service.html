@@ -8,13 +8,16 @@
     <title>문자빨리</title> 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/import.css">
     <!-- js -->
     <script src="js/common.js"></script>
 </head>
 <body>
-    <div class="mainPage">
+    <div class="servicePage">
         <header>
             <h1><a href="index.html" class="imgBox">문자빨리</a></h1>
             <nav>
@@ -30,18 +33,18 @@
             </div>
         </header>
 
-        <section class="promotionArea">
+        <section class="promotionArea contentSize">
             <h2 class="title01">
                 클릭 몇 번으로 잠재고객 모두에게
                 홍보를 시작하세요!
             </h2>
             <ul>
                 <li>
-                    <img src="images/service-promotionimg0.png" alt="단문(SMS)">
+                    <img src="images/service-promotionimg01.png" alt="단문(SMS)">
                     <strong>45자 이내</strong>
                     <p>
-                        간단한 알림 문자, 공지사항, 추천문자,
-                        당첨결과발표 등을 빠르게 고객한테 보내어
+                        간단한 알림 문자, 공지사항, 추천문자,<br>
+                        당첨결과발표 등을 빠르게 고객한테 보내어<br>
                         잠재고객을 붙잡아 보세요!
                     </p>
                     <mark>9.5</mark>
@@ -50,8 +53,8 @@
                     <img src="images/service-promotionimg02.png" alt="장문(LMS)">
                     <strong>1,000자 이내</strong>
                     <p>
-                        SMS/LMS 자동변환, 메시지만 작성해 주세요!
-                        오랜 경력을 밑바탕으로 한번에 많은
+                        SMS/LMS 자동변환, 메시지만 작성해 주세요!<br>
+                        오랜 경력을 밑바탕으로 한번에 많은<br>
                         문자 보내기 전송 가능합니다.
                     </p>
                     <mark>23.5</mark>
@@ -60,8 +63,8 @@
                     <img src="images/service-promotionimg03.png" alt="멀티(MMS)">
                     <strong>이미지 포함 1,000자 이내</strong>
                     <p>
-                        QR코드, 기프티콘, 보고서 요약, PPT, 
-                        지도이미지 등 이미지 파일 전송이 필요할 경우
+                        QR코드, 기프티콘, 보고서 요약, PPT,<br>
+                        지도이미지 등 이미지 파일 전송이 필요할 경우<br>
                         이미지 첨부만하여 전송하면 끝!
                     </p>
                     <mark>47.3</mark>
@@ -71,51 +74,69 @@
 
         <section class="sendArea">
             <div class="contentSize">
-                <h2>
+                <h2 class="title02">
                     이렇게 저렴한 문자
                     대량 발송서비스
                 </h2>
                 <ul>
                     <li>
                         <div>
-                            <strong>10,000</strong>
+                            <strong>10,000<span>원</span></strong>
                             <span>충전 시</span>
                         </div>
                         <div>
                             <strong><span>보너스</span>10%</strong>
                         </div>
-                        <mark>11,000</mark>
+                        <div>
+                            <mark>
+                                <span>=</span>
+                                11,000
+                                <span>원</span>
+                            </mark>
+                        </div>
                         <div>
                             <span>단문</span>
-                            <strong>1,158</strong>
+                            <strong><span>약</span>1,158<span>개</span></strong>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <strong>50,000</strong>
+                            <strong>50,000<span>원</span></strong>
                             <span>충전 시</span>
                         </div>
                         <div>
                             <strong><span>보너스</span>10%</strong>
                         </div>
-                        <mark>55,000</mark>
+                        <div>
+                            <mark>
+                                <span>=</span>
+                                55,000
+                                <span>원</span>
+                            </mark>
+                        </div>
                         <div>
                             <span>단문</span>
-                            <strong>5,789</strong>
+                            <strong><span>약</span>5,789<span>개</span></strong>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <strong>100,000원</strong>
+                            <strong>100,000<span>원</span></strong>
                             <span>충전 시</span>
                         </div>
                         <div>
                             <strong><span>보너스</span>10%</strong>
                         </div>
-                        <mark>1,100,000</mark>
+                        <div>
+                            <mark>
+                                <span>=</span>
+                                1,100,000
+                                <span>원</span>
+                            </mark>
+                        </div>
                         <div>
                             <span>단문</span>
-                            <strong>115,790</strong>
+                            <strong><span>약</span>115,790<span>개</span></strong>
                         </div>
                     </li>
                 </ul>
@@ -123,7 +144,7 @@
         </section>
 
         <section class="refundArea contentSize">
-            <h2>
+            <h2 class="title02">
                 수신이 거부된 문자,
                 발송실패 된 문자는
                 자동환불
@@ -133,7 +154,60 @@
 
         <section class="eagyArea">
             <div>
-                <h2>쉬운 충전 쉬운 전송 스마트하게 더 빨리!</h2>
+                <h2 class="title02">쉬운 충전 쉬운 전송 스마트하게 더 빨리!</h2>
+                <div class="swiper serviceSlider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <strong>전송 설정</strong>
+                            <p>
+                                누구나 처음 해도<br>
+                                쉽게 설정 가능
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>발신번호 등록</strong>
+                            <p>
+                                발신번호 등록 신청을 실시간으로<br>
+                                확인하여 신속하게 처리
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>캐시 충전</strong>
+                            <p>
+                                간단하고 빠르게<br>
+                                충전금 결제와 보너스까지!
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>오류 검사</strong>
+                            <p>
+                                마지막까지 체크하여<br>
+                                빠진 내용 없게
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <strong>문자 전송</strong>
+                            <p>
+                                세상에서 가장 빠른<br>
+                                문자 발송
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-scrollbar"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lowestArea">
+            <div class="contentSize">
+                <div>
+                    <h2 class="title02">
+                        <small>국내 최저가 비즈니스 문자</small>
+                        스마트 SMS ‘문자빨리’
+                    </h2>
+                    <a href="">지금 이용하러 가기</a>
+                </div>
+                <img src="images/service-lowestImg.png" alt="">
             </div>
         </section>
 
