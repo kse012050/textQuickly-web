@@ -34,39 +34,57 @@
             <h2 class="title01">고객센터</h2>
             <ul class="subMenu">
                 <li><a href="notice.html">공지사항</a></li>
-                <li class="active"><a href="event.html">이벤트</a></li>
-                <li><a href="inquiry.html">상담문의</a></li>
+                <li><a href="event.html">이벤트</a></li>
+                <li class="active"><a href="inquiry.html">상담문의</a></li>
             </ul>
-            <ul class="boardArea">
-                <li>
-                    <a href="">
-                        <p>2023년 1월 단문 최저가 이벤트</p>
-                        <time>2023.01.02 - 2023.03.02</time>
-                    </a>
-                    <div class="editor">
-                        내용
-                    </div>
-                </li>
-                <li>
-                    <a href="">
-                        <p>2023년 1월 단문 최저가 이벤트</p>
-                        <time>2023.01.02 - 2023.03.02</time>
-                    </a>
-                </li>
-            </ul>
-            <div class="pagerArea">
-                <a href="" class="imgBox">처음</a>
-                <a href="" class="imgBox">이전</a>
-                <ol>
-                    <li class="active"><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                </ol>
-                <a href="" class="imgBox">다음</a>
-                <a href="" class="imgBox">마지막</a>
-            </div>
+            <form>
+                <fieldset>
+                    <ul>
+                        <li class="half">
+                            <label for="">이름(회사명)</label>
+                            <div>
+                                <input type="text" placeholder="이름 또는 회사명 입력">
+                            </div>
+                        </li>
+                        <li class="half">
+                            <label for="">연락처</label>
+                            <div>
+                                <input type="text" placeholder="휴대폰번호 또는 유선번호 입력">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">이메일 주소</label>
+                            <div>
+                                <input type="text">
+                                <span>@</span>
+                                <input type="text">
+                                <select>
+                                    <option>직접입력</option>
+                                    <option></option>
+                                    <option></option>
+                                </select>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">첨부파일</label>
+                            <div>
+                                <input type="text" placeholder="jpg, png, pdf, 최대 5MB">
+                                <button>등록</button>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">문의내용</label>
+                            <div>
+                                <textarea placeholder="상세 문의내용 입력"></textarea>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="checkbox"><label for=""><mark>(필수)</mark> 개인정보 처리방침</label>
+                            <div class="privacyArea"></div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
         </section>
 
         <footer>

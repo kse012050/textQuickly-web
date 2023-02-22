@@ -137,7 +137,8 @@
 .centerPage .noticePage .boardArea li a span{width: 110px; text-align: center; margin-right: 10px;}
 .centerPage .noticePage .boardArea li a time{padding-right: 40px; }
 /* 고객센터 - 공지사항 - 상세 페이지*/
-.centerPage .detailPage h3{height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px 0 30px; border-top: 1px solid black;}
+.centerPage .detailPage h3{font-size: 16px; font-weight: 700; height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px 0 30px; border-top: 1px solid black;}
+.centerPage .detailPage h3 time{font-size: 15px; font-weight: 400;}
 .centerPage .detailPage .editor{min-height: 340px; padding: 30px; margin-bottom: 30px; background-color: #f8f8f8; border-width: 1px 0; border-style: solid; border-color: #dedede;}
 .centerPage .detailPage .linkArea{display: flex; margin-bottom: 80px;}
 .centerPage .detailPage .linkArea a{font-size: 15px; font-weight: 500; color: #999; width: 86px; height: 50px; display: flex; justify-content: center; align-items: center; border: 1px solid #dedede; border-radius: 6px;}

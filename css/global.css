@@ -11,6 +11,25 @@ mark{color: #2de09f;}
 /* 이미지 박스 */
 .imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 
+/* form */
+fieldset{width: 680px; margin: 0 auto;}
+fieldset ul{display: flex; flex-wrap: wrap; justify-content: space-between; margin-bottom: 60px;}
+fieldset ul li:not(:last-child){margin-bottom: 30px;}
+fieldset ul li:not(.half){width: 100%;}
+fieldset ul li.half{width: 47.79%;}
+fieldset ul li label{display: block; font-size: 15px; font-weight: 700; margin-bottom: 15px;}
+fieldset ul li div{display: flex; align-items: center; gap: 10px;}
+fieldset ul li :is(div :is(input , textarea , select) , .privacyArea){font-size: 15px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
+fieldset ul li div :is(input , select){height: 50px; padding: 0 20px;}
+fieldset ul li div :is(input , textarea)::placeholder{color: #999;}
+fieldset ul li div textarea{height: 300px; padding: 20px;}
+fieldset ul li div:has(button){position: relative;}
+fieldset ul li div:has(button) button{position: absolute; top: 50%; right: 5px; transform: translateY(-50%); font-size: 14px; font-weight: 400; color: #999; width: 54px; height: 40px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
+fieldset ul li div *:first-child{flex: 1;}
+fieldset ul li div *:first-child ~ :is(input , select){width: 200px;}
+fieldset ul li div.privacyArea{height: 200px;}
+
+
 /* 해더 공통 */
 :not(.mainPage) header{position: sticky; }
 header{top: 0; left: 0; display: flex; justify-content: center; align-items: center; background-color: white; border-bottom: 1px solid #dedede; z-index: 100;}
