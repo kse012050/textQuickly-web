@@ -149,8 +149,25 @@
 .centerPage .detailPage .boardArea li a span{margin-right: 80px;}
 .centerPage .detailPage .boardArea li a p{font-size: 16px;}
 /* 고객센터 - 이벤트 */
-.centerPage .eventPage .boardArea li{}
 .centerPage .eventPage .boardArea li a{height: 80px; padding: 0 20px 0 30px;}
 .centerPage .eventPage .boardArea li a::after{content: ''; width: 40px; height: 40px; background: url('../images/icon-open.png') no-repeat center / cover; margin-left: 50px; transition: rotate 0.5s;}
 .centerPage .eventPage .boardArea li a.active::after{rotate: 180deg;}
 .centerPage .eventPage .boardArea li .editor{display: none; padding: 30px; background-color: #f8f8f8; box-sizing: border-box; border-bottom: 1px solid #dedede;}
+/* 고객센터 - 상담 문의 */
+.centerPage .inquiryPage fieldset input[type="submit"]{width: 195px;}
+
+
+/* 로그인 */
+.singPage [class *='Page']{padding-top: 100px;}
+.singPage [class *='Page'] > :is(h2 , p){text-align: center;}
+.singPage [class *='Page'] > h2{margin-bottom: 30px;}
+.singPage [class *='Page'] > p{font-size: 18px; line-height: 26px; margin-bottom: 60px;}
+.singPage .singInPage fieldset{margin-bottom: 30px;}
+.singPage .singInPage fieldset ul{margin-bottom: 15px;}
+.singPage .singInPage fieldset ul li:not(:last-child){margin-bottom: 10px;}
+.singPage .singInPage fieldset > label{margin-bottom: 40px;}
+.singPage .singInPage fieldset input[type="submit"]{width: 100%;}
+.singPage .singInPage .linkArea{display: flex; justify-content: center; margin-bottom: 70px;}
+.singPage .singInPage .linkArea a{font-size: 15px; text-decoration: underline;}
+.singPage .singInPage .linkArea a:not(:last-child){margin-right: 15px;}
+.singPage .singInPage > a{margin: 0 auto;}

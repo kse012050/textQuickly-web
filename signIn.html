@@ -14,59 +14,51 @@
     <script src="js/common.js"></script>
 </head>
 <body>
-    <div class="centerPage">
+    <div class="singPage">
         <header>
             <h1><a href="index.html" class="imgBox">문자빨리</a></h1>
             <nav>
                 <ul>
                     <li><a href="service.html">서비스</a></li>
                     <li><a href="">API 연동</a></li>
-                    <li class="active"><a href="notice.html">고객센터</a></li>
+                    <li><a href="notice.html">고객센터</a></li>
                 </ul>
             </nav>
             <div>
-                <a href="signIn.html">로그인</a>
+                <a href="">로그인</a>
                 <a href="">회원가입</a>
             </div>
         </header>
 
-        <section class="eventPage contentSize">
-            <h2 class="title01">고객센터</h2>
-            <ul class="subMenu">
-                <li><a href="notice.html">공지사항</a></li>
-                <li class="active"><a href="event.html">이벤트</a></li>
-                <li><a href="inquiry.html">상담문의</a></li>
-            </ul>
-            <ul class="boardArea">
-                <li>
-                    <a href="">
-                        <p>2023년 1월 단문 최저가 이벤트</p>
-                        <time>2023.01.02 - 2023.03.02</time>
-                    </a>
-                    <div class="editor">
-                        내용
-                    </div>
-                </li>
-                <li>
-                    <a href="">
-                        <p>2023년 1월 단문 최저가 이벤트</p>
-                        <time>2023.01.02 - 2023.03.02</time>
-                    </a>
-                </li>
-            </ul>
-            <div class="pagerArea">
-                <a href="" class="imgBox">처음</a>
-                <a href="" class="imgBox">이전</a>
-                <ol>
-                    <li class="active"><a href="">1</a></li>
-                    <li><a href="">2</a></li>
-                    <li><a href="">3</a></li>
-                    <li><a href="">4</a></li>
-                    <li><a href="">5</a></li>
-                </ol>
-                <a href="" class="imgBox">다음</a>
-                <a href="" class="imgBox">마지막</a>
+        <section class="singInPage contentSize">
+            <h2 class="title01">로그인</h2>
+            <p>
+                국내 최저가 비즈니스 문자<br>
+                문자빨리에 오신 것을 환영합니다.
+            </p>
+            <form>
+                <fieldset class="width400">
+                    <ul>
+                        <li>
+                            <div>
+                                <input type="text" placeholder="아이디를 입력하세요">
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <input type="text" placeholder="비밀번호를 입력하세요">
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="checkbox" id="IDSave"><label for="IDSave">아이디 저장</label>
+                    <input type="submit" value="로그인" class="btn-color">
+                </fieldset>
+            </form>
+            <div class="linkArea">
+                <a href="">아이디찾기</a>
+                <a href="">비밀번호 재설정</a>
             </div>
+            <a href="" class="btn-border width400">회원가입</a>
         </section>
 
         <footer>
