@@ -31,6 +31,10 @@ function eventPage(){
                 $(this).next().remove();
             });
         }else{
+            $(this).parent().siblings().find('a').removeClass('active');
+            $(this).parent().siblings().find('.editor').slideUp(function(){
+                $(this).next().remove();
+            });
             $(this).addClass('active');
             $(this).after('<div class="editor">내용</div>')
             $(this).stop().next().slideDown();
