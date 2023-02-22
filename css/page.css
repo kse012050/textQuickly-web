@@ -117,8 +117,7 @@
 .centerPage [class *='Page'] .subMenu li:is(.active , :hover) a{font-weight: 700;}
 .centerPage [class *='Page'] .subMenu li:is(.active , :hover)::after{content: ''; position: absolute; left: 0; bottom: -6px; width: 100%; height: 2px; background-color: black;}
 .centerPage [class *='Page'] .boardArea{border-top: 1px solid #111;}
-.centerPage [class *='Page'] .boardArea li{border-bottom: 1px solid #dedede;}
-.centerPage [class *='Page'] .boardArea li a{display: flex; align-items: center; font-size: 15px;}
+.centerPage [class *='Page'] .boardArea li a{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;}
 .centerPage [class *='Page'] .boardArea li a time{margin-left: auto;}
 .centerPage [class *='Page'] .boardArea li a p{font-weight: 700;}
 .centerPage [class *='Page'] .pagerArea{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
@@ -149,6 +148,8 @@
 .centerPage .detailPage .boardArea li a span{margin-right: 80px;}
 .centerPage .detailPage .boardArea li a p{font-size: 16px;}
 /* 고객센터 - 이벤트 */
-.centerPage .eventPage .boardArea li{padding: 0 20px 0 30px;}
-.centerPage .eventPage .boardArea li a{height: 80px;}
-.centerPage .eventPage .boardArea li a::after{content: ''; width: 40px; height: 40px; background: url('../images/icon-open.png') no-repeat center / cover; margin-left: 50px;}
+.centerPage .eventPage .boardArea li{}
+.centerPage .eventPage .boardArea li a{height: 80px; padding: 0 20px 0 30px;}
+.centerPage .eventPage .boardArea li a::after{content: ''; width: 40px; height: 40px; background: url('../images/icon-open.png') no-repeat center / cover; margin-left: 50px; transition: rotate 0.5s;}
+.centerPage .eventPage .boardArea li a.active::after{rotate: 180deg;}
+.centerPage .eventPage .boardArea li .editor{display: none; padding: 30px; background-color: #f8f8f8; box-sizing: border-box; border-bottom: 1px solid #dedede;}
