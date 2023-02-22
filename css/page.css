@@ -171,3 +171,13 @@
 .singPage .singInPage .linkArea a{font-size: 15px; text-decoration: underline;}
 .singPage .singInPage .linkArea a:not(:last-child){margin-right: 15px;}
 .singPage .singInPage > a{margin: 0 auto;}
+
+/* 회원가입 */
+/* 회원가입 - 시작페이지 */
+.singPage .singUpPage ul{display: flex; padding: 60px 0; border: 1px solid #dedede; box-sizing: border-box;}
+.singPage .singUpPage ul li{flex: 1; padding: 0 13.89%; text-align: center; background-repeat: no-repeat; background-position: center top 64px; background-size: 80px;}
+.singPage .singUpPage ul li:not(:last-child){border-right: 1px solid #dedede;}
+.singPage .singUpPage ul li:nth-child(1){background-image: url('../images/signUp-img01.png');}
+.singPage .singUpPage ul li:nth-child(2){background-image: url('../images/signUp-img02.png');}
+.singPage .singUpPage ul li strong{display: block; font-size: 20px; font-weight: 700; margin-bottom: 160px;}
+.singPage .singUpPage ul li a{width: 100%;}
