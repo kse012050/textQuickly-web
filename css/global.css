@@ -6,7 +6,7 @@ mark{color: #2de09f;}
 .title02{font-size: 36px; font-weight: 700; line-height: 43px;}
 
 /* 컨텐츠 크기 */
-.contentSize{max-width: 1180px; margin: 0 auto;}
+.contentSize{max-width: 1180px; margin: 0 auto; width: calc(100% - 60px); min-width: 964px;}
 
 /* 이미지 박스 */
 .imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}

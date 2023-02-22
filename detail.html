@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>이벤트 - 문자빨리</title> 
+    <title>공지사항 상세 - 문자빨리</title> 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/import.css">
     <!-- js -->
@@ -30,21 +33,43 @@
             </div>
         </header>
 
-        <section class="eventPage contentSize">
+        <section class="detailPage contentSize">
             <h2 class="title01">고객센터</h2>
             <ul class="subMenu">
-                <li><a href="notice.html">공지사항</a></li>
-                <li class="active"><a href="event.html">이벤트</a></li>
+                <li class="active"><a href="notice.html">공지사항</a></li>
+                <li><a href="event.html">이벤트</a></li>
                 <li><a href="">상담문의</a></li>
             </ul>
+
+            <h3>
+                [공지] 서비스 작업 안내 (1/23)
+                <time>2023.01.02</time>
+            </h3>
+            <div class="editor">
+                내용
+            </div>
+            <div class="linkArea">
+                <a href="">이전</a>
+                <a href="">다음</a>
+                <a href="">목록</a>
+            </div>
             <ul class="boardArea">
                 <li>
                     <a href="">
-                        <p>2023년 1월 단문 최저가 이벤트</p>
-                        <time>2023.01.02 - 2023.03.02</time>
+                        <span>이전 글</span>
+                        <p>[공지] 서비스 작업 안내 (1/23)</p>
+                        <time>2023.01.02</time>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <span>다음 글</span>
+                        <p>[공지] 서비스 작업 안내 (1/23)</p>
+                        <time>2023.01.02</time>
                     </a>
                 </li>
             </ul>
+            
             <div class="pagerArea">
                 <a href="" class="imgBox">처음</a>
                 <a href="" class="imgBox">이전</a>
