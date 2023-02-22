@@ -1,3 +1,16 @@
+/* 공통 */
+/* 게시판 */
+[class *="boardBox"]{border-top: 1px solid #111;}
+[class *="boardBox"] li{border-bottom: 1px solid #dedede;}
+[class *="boardBox"] li a{display: flex; align-items: center; font-size: 15px;}
+[class *="boardBox"] li a time{margin-left: auto;}
+[class *="boardBox"] li a p{font-weight: 700;}
+[class *="boardBox"] li a + div{display: none; border-top: 1px solid #dedede;}
+/* 게시판 - 드랍박스 */
+.boardBox-drop li a::after{content: ''; width: 40px; height: 40px; background: url('../images/icon-open.png') no-repeat center / cover; transition: rotate 0.5s;}
+.boardBox-drop li a:not(:has(time))::after{margin-left: auto;}
+.boardBox-drop li a.active::after{rotate: 180deg;}
+
 /* 메인페이지 */
 /* 메인페이지 공통 */
 .mainPage h2{text-align: center;}
@@ -116,10 +129,6 @@
 .centerPage [class *='Page'] .subMenu li:is(.active , :hover){position: relative;}
 .centerPage [class *='Page'] .subMenu li:is(.active , :hover) a{font-weight: 700;}
 .centerPage [class *='Page'] .subMenu li:is(.active , :hover)::after{content: ''; position: absolute; left: 0; bottom: -6px; width: 100%; height: 2px; background-color: black;}
-.centerPage [class *='Page'] .boardArea{border-top: 1px solid #111;}
-.centerPage [class *='Page'] .boardArea li a{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;}
-.centerPage [class *='Page'] .boardArea li a time{margin-left: auto;}
-.centerPage [class *='Page'] .boardArea li a p{font-weight: 700;}
 .centerPage [class *='Page'] .pagerArea{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
 .centerPage [class *='Page'] .pagerArea > a{width: 24px; line-height: 24px;}
 .centerPage [class *='Page'] .pagerArea > a:nth-of-type(1){background-image: url('../images/pager-first.png');}
@@ -133,9 +142,9 @@
 .centerPage [class *='Page'] .pagerArea ol li:is(.active , :hover) a{color: #2de09f;}
 .centerPage [class *='Page'] .pagerArea ol li:is(.active , :hover)::after{content: ''; position: absolute; left: 0; bottom: -1px; width: 100%; height: 2px; background-color: #2de09f;}
 /* 고객센터 - 공지사항 */
-.centerPage .noticePage .boardArea li a{height: 90px;}
-.centerPage .noticePage .boardArea li a span{width: 110px; text-align: center; margin-right: 10px;}
-.centerPage .noticePage .boardArea li a time{padding-right: 40px; }
+.centerPage .noticePage .boardBox li a{height: 90px;}
+.centerPage .noticePage .boardBox li a span{width: 110px; text-align: center; margin-right: 10px;}
+.centerPage .noticePage .boardBox li a time{padding-right: 40px; }
 /* 고객센터 - 공지사항 - 상세 페이지*/
 .centerPage .detailPage h3{font-size: 16px; font-weight: 700; height: 80px; display: flex; justify-content: space-between; align-items: center; padding: 0 40px 0 30px; border-top: 1px solid black;}
 .centerPage .detailPage h3 time{font-size: 15px; font-weight: 400;}
@@ -149,10 +158,9 @@
 .centerPage .detailPage .boardArea li a span{margin-right: 80px;}
 .centerPage .detailPage .boardArea li a p{font-size: 16px;}
 /* 고객센터 - 이벤트 */
-.centerPage .eventPage .boardArea li a{height: 80px; padding: 0 20px 0 30px;}
-.centerPage .eventPage .boardArea li a::after{content: ''; width: 40px; height: 40px; background: url('../images/icon-open.png') no-repeat center / cover; margin-left: 50px; transition: rotate 0.5s;}
-.centerPage .eventPage .boardArea li a.active::after{rotate: 180deg;}
-.centerPage .eventPage .boardArea li .editor{display: none; padding: 30px; background-color: #f8f8f8; box-sizing: border-box; border-bottom: 1px solid #dedede;}
+.centerPage .eventPage .boardBox-drop li a{height: 80px; padding: 0 20px 0 30px;}
+.centerPage .eventPage .boardBox-drop li a time{margin-right: 50px;}
+.centerPage .eventPage .boardBox-drop li .editor{display: none; padding: 30px; background-color: #f8f8f8; box-sizing: border-box;}
 /* 고객센터 - 상담 문의 */
 .centerPage .inquiryPage fieldset input[type="submit"]{width: 195px;}
 
@@ -173,6 +181,14 @@
 .singPage .singInPage > a{margin: 0 auto;}
 
 /* 회원가입 */
+/* 회원가입 공통 */
+.singPage .progressBox{display: flex; justify-content: center; position: relative; margin-bottom: 100px;}
+.singPage .progressBox::after{content: ''; position: absolute; top: 19.5px; left: 50%; transform: translateX(-50%); width: 316px; height: 1px; background-color: #2de09f; z-index: -1;}
+.singPage .progressBox li{counter-increment: signUp; text-align: center; font-size: 18px; font-weight: 700;}
+.singPage .progressBox li:not(.active){color: #999;}
+.singPage .progressBox li:not(:last-child){margin-right: 60px;}
+.singPage .progressBox li::before{content: counter(signUp); font-size: 20px; font-weight: 700; color: #2de09f; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center; background-color: #d3ffef; border: 1px solid #2de09f; border-radius: 100%; margin: 0 auto 15px;}
+.singPage .progressBox li.active::before{background-color: #2de09f; color: white;}
 /* 회원가입 - 시작페이지 */
 .singPage .singUpPage ul{display: flex; padding: 60px 0; border: 1px solid #dedede; box-sizing: border-box;}
 .singPage .singUpPage ul li{flex: 1; padding: 0 13.89%; text-align: center; background-repeat: no-repeat; background-position: center top 64px; background-size: 80px;}
@@ -181,3 +197,8 @@
 .singPage .singUpPage ul li:nth-child(2){background-image: url('../images/signUp-img02.png');}
 .singPage .singUpPage ul li strong{display: block; font-size: 20px; font-weight: 700; margin-bottom: 160px;}
 .singPage .singUpPage ul li a{width: 100%;}
+/* 회원가입 - 이용약관 동의 */
+.singPage .agreePage fieldset label{font-weight: 700;}
+.singPage .agreePage fieldset > label{font-size: 18px; margin-bottom: 20px;}
+.singPage .agreePage fieldset .boardBox-drop li a{height: 70px; padding: 0 20px 0 30px;}
+.singPage .agreePage fieldset input[type="submit"]{width: 195px;}

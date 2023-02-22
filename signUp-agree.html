@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>이벤트 - 문자빨리</title> 
+    <title>이용약관 동의 - 회원가입 - 문자빨리</title> 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- css -->
@@ -14,14 +14,14 @@
     <script src="js/common.js"></script>
 </head>
 <body>
-    <div class="centerPage">
+    <div class="singPage">
         <header>
             <h1><a href="index.html" class="imgBox">문자빨리</a></h1>
             <nav>
                 <ul>
                     <li><a href="service.html">서비스</a></li>
                     <li><a href="">API 연동</a></li>
-                    <li class="active"><a href="notice.html">고객센터</a></li>
+                    <li><a href="notice.html">고객센터</a></li>
                 </ul>
             </nav>
             <div>
@@ -30,60 +30,57 @@
             </div>
         </header>
 
-        <section class="inquiryPage contentSize">
-            <h2 class="title01">고객센터</h2>
-            <ul class="subMenu">
-                <li><a href="notice.html">공지사항</a></li>
-                <li><a href="event.html">이벤트</a></li>
-                <li class="active"><a href="inquiry.html">상담문의</a></li>
-            </ul>
+        <section class="agreePage contentSize">
+            <h2 class="title01">회원가입</h2>
+            <ol class="progressBox">
+                <li class="active">이용약관 동의</li>
+                <li>회원정보 입력</li>
+                <li>회원가입 완료</li>
+            </ol>
             <form>
                 <fieldset class="width680">
-                    <ul class="inputBox">
-                        <li class="half">
-                            <label for="">이름(회사명)</label>
-                            <div>
-                                <input type="text" placeholder="이름 또는 회사명 입력">
-                            </div>
-                        </li>
-                        <li class="half">
-                            <label for="">연락처</label>
-                            <div>
-                                <input type="text" placeholder="휴대폰번호 또는 유선번호 입력">
+                    <input type="checkbox" id="allAgree">
+                    <label for="allAgree">서비스 전체 약관에 동의</label>
+                    <ul class="boardBox-drop">
+                        <li>
+                            <a href="">
+                                <input type="checkbox" id="terms" checked>
+                                <label for="terms">(필수) 서비스 이용약관</label>
+                            </a>
+                            <div class="termsBox">
+                                테스트
                             </div>
                         </li>
                         <li>
-                            <label for="">이메일 주소</label>
-                            <div>
-                                <input type="text">
-                                <span>@</span>
-                                <input type="text">
-                                <select>
-                                    <option>직접입력</option>
-                                    <option></option>
-                                    <option></option>
-                                </select>
+                            <a href="">
+                                <input type="checkbox" id="privacy">
+                                <label for="privacy">(필수) 개인정보 수집 및 이용</label>
+                            </a>
+                            <div class="termsBox">
+                                테스트
                             </div>
                         </li>
                         <li>
-                            <label for="">첨부파일</label>
-                            <div>
-                                <input type="text" placeholder="jpg, png, pdf, 최대 5MB">
-                                <button>등록</button>
+                            <a href="">
+                                <input type="checkbox" id="spam">
+                                <label for="spam">(필수) 스팸방지정책</label>
+                                <div>??</div>
+                            </a>
+                            <div class="termsBox">
+                                테스트
                             </div>
                         </li>
                         <li>
-                            <label for="">문의내용</label>
-                            <div>
-                                <textarea placeholder="상세 문의내용 입력"></textarea>
+                            <a href="">
+                                <input type="checkbox" id="collection">
+                                <label for="collection">(선택) 메시지 및 마케팅 수집 동의</label>
+                            </a>
+                            <div class="termsBox">
+                                테스트
                             </div>
-                        </li>
-                        <li>
-                            <input type="checkbox"><label for=""><mark>(필수)</mark> 개인정보 처리방침</label>
-                            <div class="termsBox"></div>
                         </li>
                     </ul>
-                    <input type="submit" value="문의 등록" class="btn-color">
+                    <input type="submit" value="본인 인증" class="btn-color">
                 </fieldset>
             </form>
         </section>
