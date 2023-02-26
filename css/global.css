@@ -1,5 +1,5 @@
 /* 포인트 색상 */
-mark{color: #2de09f;}
+mark:not([class]){color: #2de09f;}
 
 /* 제목 공통 */
 .title01{font-size: 40px; font-weight: 700; line-height: 50px;}
@@ -42,8 +42,10 @@ fieldset .inputBox li div{display: flex; gap: 10px;}
 fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
 fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
 fieldset .inputBox li div:not(:is( textarea , .termsBox)){align-items: center;}
-fieldset .inputBox li div:has(button){position: relative;}
-fieldset .inputBox li div:has(button) button{position: absolute; top: 50%; right: 5px; transform: translateY(-50%); font-size: 14px; font-weight: 400; color: #999; width: 54px; height: 40px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
+fieldset .inputBox li div:has(button , mark){position: relative;}
+fieldset .inputBox li div:has(button , mark) :is(button , mark){position: absolute; top: 50%; transform: translateY(-50%);}
+fieldset .inputBox li div:has(button) button{right: 5px; font-size: 14px; font-weight: 400; color: #999; width: 54px; height: 40px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
+fieldset .inputBox li div:has(mark) mark.error{right: 15px; font-size: 12px; color: #eb2f2f;}
 fieldset .inputBox li div *:first-child{flex: 1;}
 fieldset .inputBox li div *:first-child ~ :is(input , select){width: 200px;}
 fieldset input[type="submit"]{margin: 0 auto;}
