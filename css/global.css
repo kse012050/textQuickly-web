@@ -8,6 +8,9 @@ mark:not([class]){color: #2de09f;}
 /* 컨텐츠 크기 */
 .contentSize{max-width: 1180px; margin: 0 auto; width: calc(100% - 60px); min-width: 964px;}
 
+/* 접근성 */
+.textHidden{position: absolute; height: 0.1px; overflow: hidden;}
+
 /* 이미지 박스 */
 .imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 
@@ -15,6 +18,7 @@ mark:not([class]){color: #2de09f;}
 [class|='btn']{font-size: 20px; font-weight: 700; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 6px;}
 .btn-color{background-color: #2de09f; color: white; border: none;}
 .btn-border{color: #2de09f; border: 1px solid #2de09f; background-color: transparent;}
+.btn-color + .btn-border{margin-top: 20px;}
 
 /* 체크박스 , 라디오 박스 */
 input[type="checkbox"] , input[type="radio"]{display: none;}

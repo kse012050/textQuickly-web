@@ -214,6 +214,15 @@
 .singPage .finPage > div p b{display: block; font-weight: 700;}
 .singPage .finPage > div a{width: 100%;}
 .singPage .finPage > div a:not(:last-of-type){margin-bottom: 20px;}
+/* 아이디 찾기 결과 */
+.singPage .idResultPage{text-align: center;}
+.singPage .idResultPage p{font-size: 36px; line-height: 48px; margin-bottom: 40px;}
+.singPage .idResultPage strong{display: block; font-size: 40px; line-height: 48px; margin-bottom: 60px;}
+.singPage .idResultPage strong mark{font-weight: 700;}
+.singPage .idResultPage time{display: block; font-size: 18px; margin-bottom: 60px;}
+.singPage .idResultPage [class|="btn"]{width: 100%;}
+.singPage .idResultPage small{display: block; font-size: 15px; line-height: 21px; color: #999; margin-top: 30px;}
+
 /* 비밀번호 찾기 */
 .singPage .passwordPage fieldset .inputBox{margin-bottom: 40px;}
 .singPage .passwordPage fieldset input:is([type="submit"] , [type="reset"]){width: 100%;}
