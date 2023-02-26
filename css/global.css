@@ -32,15 +32,16 @@ input[type="radio"]:checked + label::before{background-image: url('../images/ico
 fieldset{font-size: 15px; margin: 0 auto;}
 fieldset ul{margin-bottom: 60px;}
 fieldset ul li :is(div :is(input , textarea , select) , .termsBox){box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
-fieldset ul li :is(div textarea , .termsBox){padding: 20px;}
+fieldset ul li :is(div textarea , .termsBox){padding: 20px; align-items: flex-start;}
 fieldset ul li div textarea{height: 300px;}
 fieldset .inputBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
 fieldset .inputBox li:not(.half){width: 100%;}
 fieldset .inputBox li.half{width: 47.79%;}
 fieldset .inputBox li label{display: block; font-weight: 700; margin-bottom: 15px; margin-top: 30px;}
-fieldset .inputBox li div{display: flex; align-items: center; gap: 10px;}
+fieldset .inputBox li div{display: flex; gap: 10px;}
 fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
 fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
+fieldset .inputBox li div:not(:is( textarea , .termsBox)){align-items: center;}
 fieldset .inputBox li div:has(button){position: relative;}
 fieldset .inputBox li div:has(button) button{position: absolute; top: 50%; right: 5px; transform: translateY(-50%); font-size: 14px; font-weight: 400; color: #999; width: 54px; height: 40px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
 fieldset .inputBox li div *:first-child{flex: 1;}

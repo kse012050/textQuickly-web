@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0, user-scalable=0">
     <!-- Iphone 모바일 확대 방지  maximum-scale=1.0, user-scalable=0-->
-    <title>이벤트 - 문자빨리</title> 
+    <title>개인 회원 - 회원가입 - 문자빨리</title> 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- css -->
@@ -14,14 +14,14 @@
     <script src="js/common.js"></script>
 </head>
 <body>
-    <div class="centerPage">
+    <div class="singPage">
         <header>
             <h1><a href="index.html" class="imgBox">문자빨리</a></h1>
             <nav>
                 <ul>
                     <li><a href="service.html">서비스</a></li>
                     <li><a href="">API 연동</a></li>
-                    <li class="active"><a href="notice.html">고객센터</a></li>
+                    <li><a href="notice.html">고객센터</a></li>
                 </ul>
             </nav>
             <div>
@@ -30,26 +30,35 @@
             </div>
         </header>
 
-        <section class="inquiryPage contentSize">
-            <h2 class="title01">고객센터</h2>
-            <ul class="subMenu">
-                <li><a href="notice.html">공지사항</a></li>
-                <li><a href="event.html">이벤트</a></li>
-                <li class="active"><a href="inquiry.html">상담문의</a></li>
-            </ul>
+        <section class="inputPage contentSize">
+            <h2 class="title01">회원가입</h2>
+            <ol class="progressBox">
+                <li>이용약관 동의</li>
+                <li class="active">회원정보 입력</li>
+                <li>회원가입 완료</li>
+            </ol>
             <form>
                 <fieldset class="width680">
+                    <legend>필수 가입 정보</legend>
+                    <p><b>이름</b>홍길동</p>
+                    <p><b>휴대폰</b>010-4567-4567</p>
                     <ul class="inputBox">
-                        <li class="half">
-                            <label for="">이름(회사명)</label>
+                        <li>
+                            <label for="">아이디</label>
                             <div>
-                                <input type="text" placeholder="이름 또는 회사명 입력">
+                                <input type="text">
                             </div>
                         </li>
                         <li class="half">
-                            <label for="">연락처</label>
+                            <label for="">비밀번호</label>
                             <div>
-                                <input type="text" placeholder="휴대폰번호 또는 유선번호 입력">
+                                <input type="text">
+                            </div>
+                        </li>
+                        <li class="half">
+                            <label for="">비밀번호 확인</label>
+                            <div>
+                                <input type="text">
                             </div>
                         </li>
                         <li>
@@ -66,24 +75,11 @@
                             </div>
                         </li>
                         <li>
-                            <label for="">첨부파일</label>
-                            <div>
-                                <input type="text" placeholder="jpg, png, pdf, 최대 5MB">
-                                <button>등록</button>
-                            </div>
-                        </li>
-                        <li>
-                            <label for="">문의내용</label>
-                            <div>
-                                <textarea placeholder="상세 문의내용 입력"></textarea>
-                            </div>
-                        </li>
-                        <li>
-                            <input type="checkbox"><label for=""><mark>(필수)</mark> 개인정보 처리방침</label>
+                            <input type="checkbox"><label for="">이메일 주소</label>
                             <div class="termsBox">내용</div>
                         </li>
                     </ul>
-                    <input type="submit" value="문의 등록" class="btn-color">
+                    <input type="submit" value="회원 가입" class="btn-color">
                 </fieldset>
             </form>
         </section>

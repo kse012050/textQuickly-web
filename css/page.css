@@ -202,3 +202,10 @@
 .singPage .agreePage fieldset > label{font-size: 18px; margin-bottom: 20px;}
 .singPage .agreePage fieldset .boardBox-drop li a{height: 70px; padding: 0 20px 0 30px;}
 .singPage .agreePage fieldset input[type="submit"]{width: 195px;}
+/* 회원가입 - 회원정보 입력 */
+.singPage .inputPage fieldset legend{font-size: 18px; font-weight: 700; margin-bottom: 40px;}
+.singPage .inputPage fieldset legend::before{content: ''; display: block; width: 35px; height: 3px; background-color: #2de09f; margin-bottom: 15px;}
+.singPage .inputPage fieldset > p{display: flex; align-items: center; font-size: 15px; font-weight: 400;}
+.singPage .inputPage fieldset > p b{width: 70px; font-weight: 700;}
+.singPage .inputPage fieldset > p:not(:last-of-type){margin-bottom: 30px;}
+.singPage .inputPage fieldset input[type="submit"]{width: 195px;}
