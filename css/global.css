@@ -14,7 +14,7 @@ mark:not([class]){color: #2de09f;}
 /* 버튼 케이스 */
 [class|='btn']{font-size: 20px; font-weight: 700; height: 60px; display: flex; justify-content: center; align-items: center; border-radius: 6px;}
 .btn-color{background-color: #2de09f; color: white; border: none;}
-.btn-border{color: #2de09f; border: 1px solid #2de09f;}
+.btn-border{color: #2de09f; border: 1px solid #2de09f; background-color: transparent;}
 
 /* 체크박스 , 라디오 박스 */
 input[type="checkbox"] , input[type="radio"]{display: none;}
@@ -35,7 +35,7 @@ input[type="radio"]:checked + label::before{background-image: url('../images/ico
 .linkBox li a{font-size: 18px;}
 .linkBox li:is(.active , :hover) a{font-weight: 700; text-decoration-line: underline; text-underline-offset: 4px; text-decoration-thickness: 2px;}
 fieldset{font-size: 15px;}
-fieldset legend{font-size: 18px; font-weight: 700;}
+fieldset legend{font-size: 18px; font-weight: 700; margin-bottom: 40px;}
 fieldset legend::before{content: ''; display: block; width: 35px; height: 3px; background-color: #2de09f; margin-bottom: 15px;}
 fieldset ul{margin-bottom: 60px;}
 fieldset ul li :is(div :is(input , textarea , select) , .termsBox){box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
@@ -44,7 +44,8 @@ fieldset ul li div textarea{height: 300px;}
 fieldset .inputBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
 fieldset .inputBox li:not(.half){width: 100%;}
 fieldset .inputBox li.half{width: 47.79%;}
-fieldset .inputBox li label{display: block; font-weight: 700; margin-bottom: 15px; margin-top: 30px;}
+fieldset .inputBox li label{display: block; font-weight: 700; margin-bottom: 15px;}
+fieldset .inputBox li:not(:first-child) label{margin-top: 30px;}
 fieldset .inputBox li div{display: flex; gap: 10px;}
 fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
 fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
