@@ -13,11 +13,23 @@
 .dashboard .leftAside > div dl dd{font-size: 15px; font-weight: 700;}
 .dashboard .leftAside > div dl dd::after{content: '원'; font-weight: 400;}
 .dashboard .leftAside > div > ul{font-size: 15px; padding: 40px 0; border-top: 1px solid #dedede;}
-.dashboard .leftAside > div > ul > li{}
 .dashboard .leftAside > div > ul > li:not(:last-child){margin-bottom: 30px;}
 .dashboard .leftAside > div > ul > li a{display: block;}
-.dashboard .leftAside > div > ul > li > a{font-weight: 700;}
+.dashboard .leftAside > div > ul > li > a{font-weight: 700; display: flex; align-items: center; position: relative;}
+.dashboard .leftAside > div > ul > li > a:only-child:is(:hover , .active){color: #2de09f;}
+.dashboard .leftAside > div > ul > li > a::before{content: ''; width: 20px; height: 20px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 7px;}
+.dashboard .leftAside > div > ul > li:nth-child(1) > a::before{background-image: url('../images/menu-icon01.png');}
+.dashboard .leftAside > div > ul > li:nth-child(2) > a::before{background-image: url('../images/menu-icon02.png');}
+.dashboard .leftAside > div > ul > li:nth-child(3) > a::before{background-image: url('../images/menu-icon03.png');}
+.dashboard .leftAside > div > ul > li:nth-child(4) > a::before{background-image: url('../images/menu-icon04.png');}
+.dashboard .leftAside > div > ul > li:nth-child(5) > a::before{background-image: url('../images/menu-icon05.png');}
+.dashboard .leftAside > div > ul > li:nth-child(1):is(:hover , .active) > a::before{background-image: url('../images/menu-icon01-active.png');}
+.dashboard .leftAside > div > ul > li:nth-child(4):is(:hover , .active) > a::before{background-image: url('../images/menu-icon04-active.png');}
+.dashboard .leftAside > div > ul > li:nth-child(5):is(:hover , .active) > a::before{background-image: url('../images/menu-icon05-active.png');}
+.dashboard .leftAside > div > ul > li:has(ul) > a::after{content: ''; width: 30px; height: 30px; background: url('../images/icon-arrow-up.png') no-repeat center / cover; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
 .dashboard .leftAside > div > ul > li ul{margin-top: 20px;}
-.dashboard .leftAside > div > ul > li ul li{}
 .dashboard .leftAside > div > ul > li ul li:not(:last-child){margin-bottom: 15px;}
-.dashboard .leftAside > div > ul > li ul li a{}
+.dashboard .leftAside > div > ul > li ul li a{display: flex; align-items: center; padding-left: 27px;}
+.dashboard .leftAside > div > ul > li ul li a::before{content: ''; width: 5px; height: 5px; background-color: #bbb; border-radius: 1px; margin-right: 10px;}
+.dashboard .leftAside > div > ul > li ul li:is(:hover , .active) a{color: #2de09f;}
+.dashboard .leftAside > div > ul > li ul li:is(:hover , .active) a::before{background-color: #2de09f;}
