@@ -1,4 +1,7 @@
 /* 공통 */
+/* 컨텐츠 크기 */
+.contentSize{max-width: 1180px; margin: 0 auto; width: calc(100% - 60px); min-width: 964px;}
+
 /* 게시판 */
 [class *="boardBox"]{border-top: 1px solid #111;}
 [class *="boardBox"] li{border-bottom: 1px solid #dedede;}
@@ -10,6 +13,7 @@
 .boardBox-drop li a::after{content: ''; width: 40px; height: 40px; background: url('../images/icon-open.png') no-repeat center / cover; transition: rotate 0.5s;}
 .boardBox-drop li a:not(:has(time))::after{margin-left: auto;}
 .boardBox-drop li a.active::after{rotate: 180deg;}
+
 
 /* 메인페이지 */
 /* 메인페이지 공통 */

@@ -1,55 +1,57 @@
+/* 컨텐츠 크기 */
+.dashboardPage :is(section , footer) > div{max-width: 960px; width: calc(100% - 60px); margin: 0 auto;}
 
-
-.dashboard{display: flex; min-height: calc(100vh - 71px);}
-.dashboard .leftAside{max-width: 250px; width: 13%; min-width: 215px; min-height: 100%;}
-.dashboard .leftAside > div{min-height: 100%; padding: 40px 30px; background-color: #f8f8f8; box-sizing: border-box;}
-.dashboard .leftAside > div p{text-align: center; font-size: 15px; font-weight: 400; margin-bottom: 30px;}
-.dashboard .leftAside > div p strong{display: block; font-size: 22px; font-weight: 700; margin-top: 10px;}
-.dashboard .leftAside > div > a{display: block; line-height: 40px; font-size: 14px; font-weight: 400; color: #999; text-align: center; background-color: white; border: 1px solid #f0f0f0; margin-bottom: 30px;}
-.dashboard .leftAside > div dl{display: flex; justify-content: space-between; align-items: center;}
-.dashboard .leftAside > div dl:not(:last-of-type){margin-bottom: 20px;}
-.dashboard .leftAside > div dl:last-of-type{margin-bottom: 30px;}
-.dashboard .leftAside > div dl dt{font-size: 14px; font-weight: 400; color: #999;}
-.dashboard .leftAside > div dl dd{font-size: 15px; font-weight: 700;}
-.dashboard .leftAside > div dl dd::after{content: '원'; font-weight: 400;}
-.dashboard .leftAside > div > ul{font-size: 15px; padding: 40px 0; border-top: 1px solid #dedede;}
-.dashboard .leftAside > div > ul > li:not(:last-child){margin-bottom: 30px;}
-.dashboard .leftAside > div > ul > li a{display: block;}
-.dashboard .leftAside > div > ul > li > a{font-weight: 700; display: flex; align-items: center; position: relative;}
-.dashboard .leftAside > div > ul > li > a:only-child:is(:hover , .active){color: #2de09f;}
-.dashboard .leftAside > div > ul > li > a::before{content: ''; width: 20px; height: 20px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 7px;}
-.dashboard .leftAside > div > ul > li:nth-child(1) > a::before{background-image: url('../images/menu-icon01.png');}
-.dashboard .leftAside > div > ul > li:nth-child(2) > a::before{background-image: url('../images/menu-icon02.png');}
-.dashboard .leftAside > div > ul > li:nth-child(3) > a::before{background-image: url('../images/menu-icon03.png');}
-.dashboard .leftAside > div > ul > li:nth-child(4) > a::before{background-image: url('../images/menu-icon04.png');}
-.dashboard .leftAside > div > ul > li:nth-child(5) > a::before{background-image: url('../images/menu-icon05.png');}
-.dashboard .leftAside > div > ul > li:nth-child(1):is(:hover , .active) > a::before{background-image: url('../images/menu-icon01-active.png');}
-.dashboard .leftAside > div > ul > li:nth-child(4):is(:hover , .active) > a::before{background-image: url('../images/menu-icon04-active.png');}
-.dashboard .leftAside > div > ul > li:nth-child(5):is(:hover , .active) > a::before{background-image: url('../images/menu-icon05-active.png');}
-.dashboard .leftAside > div > ul > li:has(ul) > a::after{content: ''; width: 30px; height: 30px; background: url('../images/icon-arrow-up.png') no-repeat center / cover; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
-.dashboard .leftAside > div > ul > li ul{margin-top: 20px;}
-.dashboard .leftAside > div > ul > li ul li:not(:last-child){margin-bottom: 15px;}
-.dashboard .leftAside > div > ul > li ul li a{display: flex; align-items: center; padding-left: 27px;}
-.dashboard .leftAside > div > ul > li ul li a::before{content: ''; width: 5px; height: 5px; background-color: #bbb; border-radius: 1px; margin-right: 10px;}
-.dashboard .leftAside > div > ul > li ul li:is(:hover , .active) a{color: #2de09f;}
-.dashboard .leftAside > div > ul > li ul li:is(:hover , .active) a::before{background-color: #2de09f;}
-.dashboard > section{flex: 1;}
-.dashboard .rightAside time{font-size: 15px; color: #999;}
-.dashboard .rightAside{width: 430px; padding: 60px 40px; box-sizing: border-box; border-left: 1px solid #dedede;}
-.dashboard .rightAside > *:not(:last-child){margin-bottom: 60px;}
-.dashboard .rightAside .swiper{padding-top: 23px;}
-.dashboard .rightAside .swiper a{display: block;}
-.dashboard .rightAside .swiper a .imgBox{height: 245px; margin-bottom: 20px;}
-.dashboard .rightAside .swiper a strong{display: block; font-size: 18px; font-weight: 700; margin-bottom: 10px;}
-.dashboard .rightAside .swiper .swiper-pagination{left: 0; top: 0; display: flex; bottom: auto;}
-.dashboard .rightAside .swiper .swiper-pagination .swiper-pagination-bullet{width: 35px; height: 3px; border-radius: 0; margin: 0; opacity: 1; background-color: #efefef;}
-.dashboard .rightAside .swiper .swiper-pagination .swiper-pagination-bullet:not(:last-child){margin-right: 10px;}
-.dashboard .rightAside .swiper .swiper-pagination .swiper-pagination-bullet-active{background-color: #2de09f;}
-.dashboard .rightAside :is(section , footer) > *:first-child{font-size: 20px; font-weight: 700; padding-top: 20px; margin-bottom: 30px;}
-.dashboard .rightAside :is(section , footer) > *:first-child::before{content: ''; display: block; width: 25px; height: 3px; background-color: #2de09f; margin-bottom: 20px;}
-.dashboard .rightAside section ul li:not(:last-child){margin-bottom: 30px;}
-.dashboard .rightAside section ul li a{display: block;}
-.dashboard .rightAside section ul li a strong{display: block; font-size: 15px; font-weight: 700; margin-bottom: 10px;}
-.dashboard .rightAside footer ul{margin-bottom: 20px;}
-.dashboard .rightAside footer address p{font-size: 13px; font-weight: 500; color: #666;}
-.dashboard .rightAside footer address p:not(:last-child){margin-bottom: 12px;}
+.dashboardPage{display: flex; min-height: calc(100vh - 71px);}
+.dashboardPage .leftAside{max-width: 250px; width: 13%; min-width: 215px; min-height: 100%;}
+.dashboardPage .leftAside > div{min-height: 100%; padding: 40px 30px; background-color: #f8f8f8; box-sizing: border-box;}
+.dashboardPage .leftAside > div p{text-align: center; font-size: 15px; font-weight: 400; margin-bottom: 30px;}
+.dashboardPage .leftAside > div p strong{display: block; font-size: 22px; font-weight: 700; margin-top: 10px;}
+.dashboardPage .leftAside > div > a{display: block; line-height: 40px; font-size: 14px; font-weight: 400; color: #999; text-align: center; background-color: white; border: 1px solid #f0f0f0; margin-bottom: 30px;}
+.dashboardPage .leftAside > div dl{display: flex; justify-content: space-between; align-items: center;}
+.dashboardPage .leftAside > div dl:not(:last-of-type){margin-bottom: 20px;}
+.dashboardPage .leftAside > div dl:last-of-type{margin-bottom: 30px;}
+.dashboardPage .leftAside > div dl dt{font-size: 14px; font-weight: 400; color: #999;}
+.dashboardPage .leftAside > div dl dd{font-size: 15px; font-weight: 700;}
+.dashboardPage .leftAside > div dl dd::after{content: '원'; font-weight: 400;}
+.dashboardPage .leftAside > div > ul{font-size: 15px; padding: 40px 0; border-top: 1px solid #dedede;}
+.dashboardPage .leftAside > div > ul > li:not(:last-child){margin-bottom: 30px;}
+.dashboardPage .leftAside > div > ul > li a{display: block;}
+.dashboardPage .leftAside > div > ul > li > a{font-weight: 700; display: flex; align-items: center; position: relative;}
+.dashboardPage .leftAside > div > ul > li > a:only-child:is(:hover , .active){color: #2de09f;}
+.dashboardPage .leftAside > div > ul > li > a::before{content: ''; width: 20px; height: 20px; background-repeat: no-repeat; background-position: center; background-size: cover; margin-right: 7px;}
+.dashboardPage .leftAside > div > ul > li:nth-child(1) > a::before{background-image: url('../images/menu-icon01.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(2) > a::before{background-image: url('../images/menu-icon02.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(3) > a::before{background-image: url('../images/menu-icon03.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(4) > a::before{background-image: url('../images/menu-icon04.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(5) > a::before{background-image: url('../images/menu-icon05.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(1):is(:hover , .active) > a::before{background-image: url('../images/menu-icon01-active.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(4):is(:hover , .active) > a::before{background-image: url('../images/menu-icon04-active.png');}
+.dashboardPage .leftAside > div > ul > li:nth-child(5):is(:hover , .active) > a::before{background-image: url('../images/menu-icon05-active.png');}
+.dashboardPage .leftAside > div > ul > li:has(ul) > a::after{content: ''; width: 30px; height: 30px; background: url('../images/icon-arrow-up.png') no-repeat center / cover; position: absolute; right: 0; top: 50%; transform: translateY(-50%);}
+.dashboardPage .leftAside > div > ul > li ul{margin-top: 20px;}
+.dashboardPage .leftAside > div > ul > li ul li:not(:last-child){margin-bottom: 15px;}
+.dashboardPage .leftAside > div > ul > li ul li a{display: flex; align-items: center; padding-left: 27px;}
+.dashboardPage .leftAside > div > ul > li ul li a::before{content: ''; width: 5px; height: 5px; background-color: #bbb; border-radius: 1px; margin-right: 10px;}
+.dashboardPage .leftAside > div > ul > li ul li:is(:hover , .active) a{color: #2de09f;}
+.dashboardPage .leftAside > div > ul > li ul li:is(:hover , .active) a::before{background-color: #2de09f;}
+.dashboardPage > section{flex: 1; padding-top: 60px;}
+.dashboardPage > section > div{}
+.dashboardPage .rightAside time{font-size: 15px; color: #999;}
+.dashboardPage .rightAside{width: 430px; padding: 60px 40px; box-sizing: border-box; border-left: 1px solid #dedede;}
+.dashboardPage .rightAside > *:not(:last-child){margin-bottom: 60px;}
+.dashboardPage .rightAside .swiper{padding-top: 23px;}
+.dashboardPage .rightAside .swiper a{display: block;}
+.dashboardPage .rightAside .swiper a .imgBox{height: 245px; margin-bottom: 20px;}
+.dashboardPage .rightAside .swiper a strong{display: block; font-size: 18px; font-weight: 700; margin-bottom: 10px;}
+.dashboardPage .rightAside .swiper .swiper-pagination{left: 0; top: 0; display: flex; bottom: auto;}
+.dashboardPage .rightAside .swiper .swiper-pagination .swiper-pagination-bullet{width: 35px; height: 3px; border-radius: 0; margin: 0; opacity: 1; background-color: #efefef;}
+.dashboardPage .rightAside .swiper .swiper-pagination .swiper-pagination-bullet:not(:last-child){margin-right: 10px;}
+.dashboardPage .rightAside .swiper .swiper-pagination .swiper-pagination-bullet-active{background-color: #2de09f;}
+.dashboardPage .rightAside :is(section , footer) > *:first-child{font-size: 20px; font-weight: 700; padding-top: 20px; margin-bottom: 30px;}
+.dashboardPage .rightAside :is(section , footer) > *:first-child::before{content: ''; display: block; width: 25px; height: 3px; background-color: #2de09f; margin-bottom: 20px;}
+.dashboardPage .rightAside section ul li:not(:last-child){margin-bottom: 30px;}
+.dashboardPage .rightAside section ul li a{display: block;}
+.dashboardPage .rightAside section ul li a strong{display: block; font-size: 15px; font-weight: 700; margin-bottom: 10px;}
+.dashboardPage .rightAside footer ul{margin-bottom: 20px;}
+.dashboardPage .rightAside footer address p{font-size: 13px; font-weight: 500; color: #666;}
+.dashboardPage .rightAside footer address p:not(:last-child){margin-bottom: 12px;}

@@ -5,9 +5,6 @@ mark:not([class]){color: #2de09f;}
 .title01{font-size: 40px; font-weight: 700; line-height: 50px;}
 .title02{font-size: 36px; font-weight: 700; line-height: 43px;}
 
-/* 컨텐츠 크기 */
-.contentSize{max-width: 1180px; margin: 0 auto; width: calc(100% - 60px); min-width: 964px;}
-
 /* 접근성 */
 .textHidden{position: absolute; top: 0; height: 0.1px; overflow: hidden;}
 
