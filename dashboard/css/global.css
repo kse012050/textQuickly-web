@@ -33,3 +33,23 @@
 .dashboard .leftAside > div > ul > li ul li a::before{content: ''; width: 5px; height: 5px; background-color: #bbb; border-radius: 1px; margin-right: 10px;}
 .dashboard .leftAside > div > ul > li ul li:is(:hover , .active) a{color: #2de09f;}
 .dashboard .leftAside > div > ul > li ul li:is(:hover , .active) a::before{background-color: #2de09f;}
+.dashboard > section{flex: 1;}
+.dashboard .rightAside time{font-size: 15px; color: #999;}
+.dashboard .rightAside{width: 430px; padding: 60px 40px; box-sizing: border-box; border-left: 1px solid #dedede;}
+.dashboard .rightAside > *:not(:last-child){margin-bottom: 60px;}
+.dashboard .rightAside .swiper{padding-top: 23px;}
+.dashboard .rightAside .swiper a{display: block;}
+.dashboard .rightAside .swiper a .imgBox{height: 245px; margin-bottom: 20px;}
+.dashboard .rightAside .swiper a strong{display: block; font-size: 18px; font-weight: 700; margin-bottom: 10px;}
+.dashboard .rightAside .swiper .swiper-pagination{left: 0; top: 0; display: flex; bottom: auto;}
+.dashboard .rightAside .swiper .swiper-pagination .swiper-pagination-bullet{width: 35px; height: 3px; border-radius: 0; margin: 0; opacity: 1; background-color: #efefef;}
+.dashboard .rightAside .swiper .swiper-pagination .swiper-pagination-bullet:not(:last-child){margin-right: 10px;}
+.dashboard .rightAside .swiper .swiper-pagination .swiper-pagination-bullet-active{background-color: #2de09f;}
+.dashboard .rightAside :is(section , footer) > *:first-child{font-size: 20px; font-weight: 700; padding-top: 20px; margin-bottom: 30px;}
+.dashboard .rightAside :is(section , footer) > *:first-child::before{content: ''; display: block; width: 25px; height: 3px; background-color: #2de09f; margin-bottom: 20px;}
+.dashboard .rightAside section ul li:not(:last-child){margin-bottom: 30px;}
+.dashboard .rightAside section ul li a{display: block;}
+.dashboard .rightAside section ul li a strong{display: block; font-size: 15px; font-weight: 700; margin-bottom: 10px;}
+.dashboard .rightAside footer ul{margin-bottom: 20px;}
+.dashboard .rightAside footer address p{font-size: 13px; font-weight: 500; color: #666;}
+.dashboard .rightAside footer address p:not(:last-child){margin-bottom: 12px;}

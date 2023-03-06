@@ -9,7 +9,7 @@ mark:not([class]){color: #2de09f;}
 .contentSize{max-width: 1180px; margin: 0 auto; width: calc(100% - 60px); min-width: 964px;}
 
 /* 접근성 */
-.textHidden{position: absolute; height: 0.1px; overflow: hidden;}
+.textHidden{position: absolute; top: 0; height: 0.1px; overflow: hidden;}
 
 /* 이미지 박스 */
 .imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
@@ -89,16 +89,17 @@ header.active nav ul li:is(.active ,:hover)::before{background-color: white;}
 
 /* 푸터 */
 [class$='Page']:not(.servicePage)  footer{margin-top: 160px;}
-footer{padding: 39.5px 0 75px; border-top: 1px solid #dedede;}
-footer > div{position: relative;}
-footer > div ul{display: flex; margin-bottom: 40px;}
-footer > div ul li:not(:last-child){margin-right: 30px;}
-footer > div ul li a{font-size: 14px; font-weight: 700;}
-footer > div ul li:first-child a{color: #666;}
-footer > div h2{max-width: 96px; margin-bottom: 20px;}
-footer > div h2 img{width: 100%;}
-footer > div address{display: flex; flex-wrap: wrap; max-width: 495px; gap: 12px 20px;}
-footer > div address p{font-size: 13px; font-weight: 500; color: #666;}
-footer > div div{position: absolute; right: 0; bottom: 0;}
-footer > div div p{font-size: 13px; font-weight: 500; margin-bottom: 15px;}
-footer > div div a{width: 172px; line-height: 40px; font-size: 13px; font-weight: 800; color: white; text-align: center; background-color: #2de09f; border-radius: 6px;}
+:not(.rightAside) > footer{padding: 39.5px 0 75px; border-top: 1px solid #dedede;}
+:not(.rightAside) > footer > div{position: relative;}
+footer ul{display: flex;}
+footer ul li:not(:last-child){margin-right: 30px;}
+footer ul li a{font-size: 14px; font-weight: 700;}
+footer ul li:first-child a{color: #666;}
+:not(.rightAside) > footer > div ul{margin-bottom: 40px;}
+:not(.rightAside) > footer > div h2{max-width: 96px; margin-bottom: 20px;}
+:not(.rightAside) > footer > div h2 img{width: 100%;}
+:not(.rightAside) > footer > div address{display: flex; flex-wrap: wrap; max-width: 495px; gap: 12px 20px;}
+:not(.rightAside) > footer > div address p{font-size: 13px; font-weight: 500; color: #666;}
+:not(.rightAside) > footer > div div{position: absolute; right: 0; bottom: 0;}
+:not(.rightAside) > footer > div div p{font-size: 13px; font-weight: 500; margin-bottom: 15px;}
+:not(.rightAside) > footer > div div a{width: 172px; line-height: 40px; font-size: 13px; font-weight: 800; color: white; text-align: center; background-color: #2de09f; border-radius: 6px;}

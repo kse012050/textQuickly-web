@@ -7,8 +7,13 @@
     <title>문자빨리</title>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- css -->
     <link rel="stylesheet" href="css/import.css">
+    <!-- js -->
+    <script src="js/common.js"></script>
 </head>
 <body>
     <div class="">
@@ -25,6 +30,8 @@
                 <a href="">로그아웃</a>
             </div>
         </header>
+
+        <h2 class="textHidden">대시보드 홈</h2>
 
         <div class="dashboard">
             <aside class="leftAside">
@@ -72,11 +79,67 @@
             </aside>
 
             <section>
-                <h2>청개구리 회원님 안녕하세요!</h2>
+                <h3>청개구리 회원님 안녕하세요!</h3>
             </section>
 
             <aside class="rightAside">
-                오른쪽
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="imgBox" style="background-image: url('https://via.placeholder.com/350x245');">이벤트 이미지</div>
+                                <strong>설문조사 참여 시 선물증정!</strong>
+                                <time>2023.01.02 - 2023.03.01</time>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="">
+                                <div class="imgBox" style="background-image: url('https://via.placeholder.com/350x245');">이벤트 이미지</div>
+                                <strong>설문조사 참여 시 선물증정!</strong>
+                                <time>2023.01.02 - 2023.03.01</time>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <section>
+                    <h3>공지사항</h3>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <strong>서비스 정기 점검 작업 (1/25) 안내</strong>
+                                <time>2023.02.01</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>문자빨리 설맞이 안내</strong>
+                                <time>2023.01.18</time>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <strong>이용약관 및 개인정보처리방침 안내</strong>
+                                <time>2023.01.02</time>
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+                <footer>
+                    <a href="">고객센터 1588-1588</a>
+                    <ul>
+                        <li><a href="">이용약관</a></li>
+                        <li><a href="">개인정보처리방침</a></li>
+                    </ul>
+                    <address>
+                        <p>소프트웨어 및 공급업 (주)스마트퓨쳐</p>
+                        <p>대표자 홍운기</p>
+                        <p>사업자등록번호 개발 616-86-29368</p>
+                        <p>주소 서울특별시 서초구 강남대로 275, 8층 (서초동, 강남메인타워)</p>
+                        <p>대표번호 070-7703-6553</p>
+                        <p>팩스번호 02-521-7526</p>
+                    </address>
+                </footer>
             </aside>
         </div>
     </div>
