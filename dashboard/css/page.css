@@ -81,7 +81,7 @@
 .myPage > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
 .myPage fieldset{max-width: 400px; margin: 0 auto;}
 .myPage fieldset legend{font-size: 20px; font-weight: 700;}
-.myPage fieldset legend:has(+ p){margin-bottom: 40px;}
+.myPage fieldset legend:has(+ p , + ul){margin-bottom: 40px;}
 .myPage fieldset > small{display: block; max-width: 265px; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px; margin-bottom: 40px;}
 .myPage fieldset ul{margin-bottom: 40px;}
 .myPage fieldset ul li mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
