@@ -2,8 +2,8 @@
 .dashboardPage :is(section , footer) > div{max-width: 960px; width: calc(100% - 60px); margin: 0 auto;}
 
 /* 버튼 케이스 */
-[class|='btn']:not(input[type="submit"]){font-size: 16px; height: 50px;}
-input:is([type="submit"],[type="reset"])[class|='btn']{width: 100%; height: 60px;}
+[class|='btn']:not(input){font-size: 16px; height: 50px;}
+input:is([type="submit"],[type="reset"])[class|='btn']{font-size: 20px; width: 100%; height: 60px;}
 
 
 .dashboardPage{display: flex; min-height: calc(100vh - 71px);}
