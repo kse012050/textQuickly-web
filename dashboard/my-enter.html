@@ -76,8 +76,8 @@
                 </div>
             </aside>
 
-            <section>
-                <div class="myPage">
+            <section class="myPage">
+                <div class="enterPage">
                     <h2>마이페이지</h2>
                     <ul>
                         <li class="active"><a href="">회원정보변경</a></li>
@@ -85,33 +85,21 @@
                         <li><a href="">기업회원전환</a></li>
                         <li><a href="">회원탈퇴</a></li>
                     </ul>
-                    <form>
-                        <fieldset class="width400">
-                            <legend>비밀번호 변경</legend>
-                            <ul class="inputBox">
-                                <li>
-                                    <label for="">현재 비밀번호</label>
-                                    <div>
-                                        <input type="text">
-                                    </div>
-                                </li>
-                                <li>
-                                    <label for="">새 비밀번호</label>
-                                    <div>
-                                        <input type="text" placeholder="영문, 숫자, 특수문자 포함, 8~16자">
-                                    </div>
-                                </li>
-                                <li>
-                                    <label for="">새 비밀번호 확인</label>
-                                    <div>
-                                        <input type="text" placeholder="새 비밀번호 확인">
-                                    </div>
-                                </li>
-                            </ul>
-                            <input type="submit" value="확인" class="btn-color">
-                            <input type="reset" value="취소" class="btn-border">
-                        </fieldset>
-                    </form>
+                    <div>
+                        <strong>기업정보</strong>
+                        <small>
+                            발신번호 등록에 필요한 서류를 반드시 확인 후 제출해주세요.<br>
+                            서류 미비 시 발신번호 이용이 제한됩니다.
+                        </small>
+                        <div class="transformArea">
+                            <strong>
+                                기업회원으로 전환하고<br>
+                                발신번호 등록하기
+                            </strong>
+                            <img src="images/mypage-enter-transformImg.png" alt="기업회원으로 전환 이미지">
+                            <button class="btn-color">발신번호 등록</button>
+                        </div>
+                    </div>
                 </div>
                 <footer>
                     <div>

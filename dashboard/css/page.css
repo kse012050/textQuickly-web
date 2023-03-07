@@ -74,20 +74,30 @@
 
 
 /* 마이페이지 */
-.myPage h2{text-align: center; margin-bottom: 50px;}
-.myPage .width400{max-width: 400px; margin: 0 auto;}
-.myPage > ul{display: flex; margin-bottom: 80px;}
-.myPage > ul li{flex: 1;}
-.myPage > ul li a{display: block; font-size: 15px; line-height: 45px; text-align: center; border: 1px solid #dedede;}
-.myPage > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
-.myPage strong{font-size: 20px; font-weight: 700;}
-.myPage small{display: block; max-width: 265px; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px; margin-bottom: 40px;}
-.myPage fieldset{margin-top: 40px;}
-.myPage fieldset ul{margin-bottom: 40px;}
-.myPage fieldset ul li mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
-.myPage fieldset ul li mark.active{display: block;}
-.myPage fieldset .inputBox li div:has(select){flex-wrap: wrap;}
-.myPage fieldset .inputBox li div:has(select) input:first-of-type{width: 205px;}
-.myPage fieldset .inputBox li div:has(select) input:nth-of-type(2){width: 160px;}
-.myPage fieldset .inputBox li div select{width: 100%;}
-.myPage fieldset .inputBox li div input[type="checkbox"] +label:not(:last-of-type){margin-right: 50px;}
+/* 마이페이지 공통 */
+.myPage > div > h2{text-align: center; margin-bottom: 50px;}
+.myPage > div .width400{max-width: 400px; margin: 0 auto;}
+.myPage > div > ul{display: flex; margin-bottom: 80px;}
+.myPage > div > ul li{flex: 1;}
+.myPage > div > ul li a{display: block; font-size: 15px; line-height: 45px; text-align: center; border: 1px solid #dedede;}
+.myPage > div > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
+.myPage > div > div > strong{display: block; font-size: 20px; font-weight: 700;}
+.myPage > div > div > small{display: block; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px;}
+.myPage > div > div :is(strong:not(:has(+ small)) , small){margin-bottom: 40px;}
+.myPage > div fieldset ul{margin-bottom: 40px;}
+.myPage > div fieldset ul li mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
+.myPage > div fieldset ul li mark.active{display: block;}
+.myPage > div fieldset .inputBox li div:has(select){flex-wrap: wrap;}
+.myPage > div fieldset .inputBox li div:has(select) input:first-of-type{width: 205px;}
+.myPage > div fieldset .inputBox li div:has(select) input:nth-of-type(2){width: 160px;}
+.myPage > div fieldset .inputBox li div select{width: 100%;}
+.myPage > div fieldset .inputBox li div input[type="checkbox"] +label:not(:last-of-type){margin-right: 50px;}
+
+/* 마이페이지 - 기업 */
+/* 마이페이지 - 기업 공통 */
+.enterPage > div > div{background-color: #f8f8f8;}
+/* 마이페이지 - 기업 - 전환*/
+.enterPage > div .transformArea{padding: 50px; text-align: center;}
+.enterPage > div .transformArea strong{display: block; font-size: 22px; font-weight: 700; line-height: 30px; margin-bottom: 30px;}
+.enterPage > div .transformArea img{width: 160px; margin-bottom: 30px;}
+.enterPage > div .transformArea button{width: 230px; margin: 0 auto;}

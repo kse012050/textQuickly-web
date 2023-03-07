@@ -12,10 +12,12 @@ mark:not([class]){color: #2de09f;}
 .imgBox{text-indent: -9999px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 
 /* 버튼 케이스 */
-[class|='btn']{font-weight: 700; display: flex; justify-content: center; align-items: center; border-radius: 6px;}
-.btn-color{background-color: #2de09f; color: white; border: none;}
-.btn-border{color: #2de09f; border: 1px solid #2de09f; background-color: transparent;}
-.btn-color + .btn-border{margin-top: 20px;}
+[class*='btn']{font-weight: 700; display: flex; justify-content: center; align-items: center; border-radius: 6px;}
+[class|='btn']{font-size: 20px; height: 60px;}
+[class|='btn2']{font-size: 16px; height: 50px;}
+[class*='btn'][class$="color"]{background-color: #2de09f; color: white; border: none;}
+[class*='btn'][class$="border"]{color: #2de09f; border: 1px solid #2de09f; background-color: transparent;}
+[class*='btn'][class$="color"] + [class*='btn'][class$="border"]{margin-top: 20px;}
 
 /* 체크박스 , 라디오 박스 */
 input[type="checkbox"] , input[type="radio"]{display: none;}
