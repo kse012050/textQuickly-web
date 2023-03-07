@@ -95,9 +95,10 @@
 
 /* 마이페이지 - 기업 */
 /* 마이페이지 - 기업 공통 */
-.enterPage > div > div{background-color: #f8f8f8; padding: 50px; text-align: center;}
-.enterPage > div > div strong{display: block; font-size: 22px; font-weight: 700;}
-.enterPage > div > div img{width: 160px; margin-bottom: 30px;}
+.enterPage > div > div{background-color: #f8f8f8;}
+.enterPage > div > div:not(.infoArea){padding: 50px; text-align: center;}
+.enterPage > div > div:not(.infoArea) strong{display: block; font-size: 22px; font-weight: 700;}
+.enterPage > div > div:not(.infoArea) img{width: 160px; margin-bottom: 30px;}
 /* 마이페이지 - 기업 - 전환 */
 .enterPage > div .transformArea strong{line-height: 30px; margin-bottom: 30px;}
 .enterPage > div .transformArea button{width: 230px; margin: 0 auto;}
@@ -107,3 +108,10 @@
 .enterPage > div .reviewArea p:first-of-type{line-height: 20px; margin-bottom: 30px;}
 .enterPage > div .reviewArea p:nth-of-type(2){margin-bottom: 10px;}
 .enterPage > div .reviewArea a{font-size: 18px; font-weight: 700;}
+/* 마이페이지 - 기업 - 정보 */
+.enterPage > div .infoArea{padding: 40px;}
+.enterPage > div .infoArea dl{display: flex; justify-content: center; align-items: center; font-size: 15px; line-height: 18px;}
+.enterPage > div .infoArea dl:not(:last-child){margin-bottom: 30px;}
+.enterPage > div .infoArea dl::before{content: ''; width: 5px; height: 5px; background-color: #2de09f; border-radius: 1px; margin-right: 10px;}
+.enterPage > div .infoArea dl dt{width: 240px; font-weight: 700;}
+.enterPage > div .infoArea dl dd{width: 130px;}
