@@ -1,7 +1,11 @@
 /* 컨텐츠 크기 */
 .dashboardPage :is(section , footer) > div{max-width: 960px; width: calc(100% - 60px); margin: 0 auto;}
 
+/* 버튼 케이스 */
+[class|='btn']{font-size: 16px; height: 50px;}
+
 .dashboardPage{display: flex; min-height: calc(100vh - 71px);}
+/* 왼쪽 aside */
 .dashboardPage .leftAside{max-width: 250px; width: 13%; min-width: 215px; min-height: 100%;}
 .dashboardPage .leftAside > div{min-height: 100%; padding: 40px 30px; background-color: #f8f8f8; box-sizing: border-box;}
 .dashboardPage .leftAside > div p{text-align: center; font-size: 15px; font-weight: 400; margin-bottom: 30px;}
@@ -34,8 +38,11 @@
 .dashboardPage .leftAside > div > ul > li ul li a::before{content: ''; width: 5px; height: 5px; background-color: #bbb; border-radius: 1px; margin-right: 10px;}
 .dashboardPage .leftAside > div > ul > li ul li:is(:hover , .active) a{color: #2de09f;}
 .dashboardPage .leftAside > div > ul > li ul li:is(:hover , .active) a::before{background-color: #2de09f;}
+/* 컨텐츠 */
 .dashboardPage > section{flex: 1; padding-top: 60px;}
-.dashboardPage > section > div{}
+.dashboardPage > section > div h3{font-size: 32px; font-weight: 700;}
+.dashboardPage > section > div > div:not(:last-child){margin-bottom: 80px;}
+/* 오른쪽 aside */
 .dashboardPage .rightAside time{font-size: 15px; color: #999;}
 .dashboardPage .rightAside{width: 430px; padding: 60px 40px; box-sizing: border-box; border-left: 1px solid #dedede;}
 .dashboardPage .rightAside > *:not(:last-child){margin-bottom: 60px;}
@@ -47,7 +54,7 @@
 .dashboardPage .rightAside .swiper .swiper-pagination .swiper-pagination-bullet{width: 35px; height: 3px; border-radius: 0; margin: 0; opacity: 1; background-color: #efefef;}
 .dashboardPage .rightAside .swiper .swiper-pagination .swiper-pagination-bullet:not(:last-child){margin-right: 10px;}
 .dashboardPage .rightAside .swiper .swiper-pagination .swiper-pagination-bullet-active{background-color: #2de09f;}
-.dashboardPage .rightAside :is(section , footer) > *:first-child{font-size: 20px; font-weight: 700; padding-top: 20px; margin-bottom: 30px;}
+.dashboardPage .rightAside :is(section , footer) > *:first-child{font-size: 20px; font-weight: 700; margin-bottom: 30px;}
 .dashboardPage .rightAside :is(section , footer) > *:first-child::before{content: ''; display: block; width: 25px; height: 3px; background-color: #2de09f; margin-bottom: 20px;}
 .dashboardPage .rightAside section ul li:not(:last-child){margin-bottom: 30px;}
 .dashboardPage .rightAside section ul li a{display: block;}
