@@ -36,17 +36,16 @@ input[type="radio"]:checked + label::before{background-image: url('../images/ico
 .linkBox li a{font-size: 18px;}
 .linkBox li:is(.active , :hover) a{font-weight: 700; text-decoration-line: underline; text-underline-offset: 4px; text-decoration-thickness: 2px;}
 fieldset{font-size: 15px;}
-fieldset legend{font-size: 18px; font-weight: 700; margin-bottom: 40px;}
-fieldset legend::before{content: ''; display: block; width: 35px; height: 3px; background-color: #2de09f; margin-bottom: 15px;}
-fieldset ul{margin-bottom: 60px;}
+fieldset > p{display: flex; align-items: center; font-size: 15px; font-weight: 400; margin-bottom: 30px;}
+fieldset > p b{width: 70px; font-weight: 700;}
 fieldset ul li :is(div :is(input , textarea , select) , .termsBox){box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
 fieldset ul li :is(div textarea , .termsBox){padding: 20px; align-items: flex-start;}
 fieldset ul li div textarea{height: 300px;}
 fieldset .inputBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
 fieldset .inputBox li:not(.half){width: 100%;}
 fieldset .inputBox li.half{width: 47.79%;}
-fieldset .inputBox li label{display: block; font-weight: 700; margin-bottom: 15px;}
-fieldset .inputBox li:not(:first-child , .half) label{margin-top: 30px;}
+fieldset .inputBox li > label{display: block; font-weight: 700; margin-bottom: 15px;}
+fieldset .inputBox li:not(:first-child , .half:first-child , .half:first-child + .half) > label{margin-top: 30px;}
 fieldset .inputBox li div{display: flex; gap: 10px;}
 fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
 fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
@@ -58,7 +57,6 @@ fieldset .inputBox li div:has(mark , time) :is(mark.error , time){color: #eb2f2f
 fieldset .inputBox li div:has(mark) mark.error{right: 15px; font-size: 12px;}
 fieldset .inputBox li div:has(time) time{right: 20px; font-size: 14px;}
 fieldset .inputBox li div *:first-child{flex: 1;}
-fieldset .inputBox li div *:first-child ~ :is(input , select){width: 200px;}
 fieldset input[type="submit"]{margin: 0 auto;}
 .termsBox{height: 200px;}
 

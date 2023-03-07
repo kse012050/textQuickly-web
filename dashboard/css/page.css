@@ -71,3 +71,23 @@
 .homePage .statisticsArea ul > li ol li[data-order="2"] mark::after{height: 87px;}
 .homePage .statisticsArea ul > li ol li[data-order="3"] mark::after{height: 47px;}
 .homePage .statisticsArea ul > li ol li small{display: block; font-size: 14px; font-weight: 400; color: #999; padding-top: 12px; border-top: 1px solid #dedede;}
+
+
+/* 마이페이지 */
+.myPage h2{text-align: center; margin-bottom: 50px;}
+.myPage > ul{display: flex; margin-bottom: 80px;}
+.myPage > ul li{flex: 1;}
+.myPage > ul li a{display: block; font-size: 15px; line-height: 45px; text-align: center; border: 1px solid #dedede;}
+.myPage > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
+.myPage fieldset{max-width: 400px; margin: 0 auto;}
+.myPage fieldset legend{font-size: 20px; font-weight: 700;}
+.myPage fieldset legend:has(+ p){margin-bottom: 40px;}
+.myPage fieldset > small{display: block; max-width: 265px; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px; margin-bottom: 40px;}
+.myPage fieldset ul{margin-bottom: 40px;}
+.myPage fieldset ul li mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
+.myPage fieldset ul li mark.active{display: block;}
+.myPage fieldset .inputBox li div:has(select){flex-wrap: wrap;}
+.myPage fieldset .inputBox li div:has(select) input:first-of-type{width: 205px;}
+.myPage fieldset .inputBox li div:has(select) input:nth-of-type(2){width: 160px;}
+.myPage fieldset .inputBox li div select{width: 100%;}
+.myPage fieldset .inputBox li div input[type="checkbox"] +label:not(:last-of-type){margin-right: 50px;}

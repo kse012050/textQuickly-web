@@ -190,8 +190,6 @@
 .singPage .agreePage fieldset .boardBox-drop li a{height: 70px; padding: 0 20px 0 30px;}
 .singPage .agreePage fieldset input[type="submit"]{width: 195px;}
 /* 회원가입 - 회원정보 입력 */
-.singPage .inputPage fieldset > p{display: flex; align-items: center; font-size: 15px; font-weight: 400; margin-bottom: 30px;}
-.singPage .inputPage fieldset > p b{width: 70px; font-weight: 700;}
 .singPage .inputPage fieldset input[type="submit"]{width: 195px;}
 /* 회원가입 - 완료 */
 .singPage .finPage > div{margin: 0 auto; text-align: center;}
