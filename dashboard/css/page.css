@@ -95,9 +95,15 @@
 
 /* 마이페이지 - 기업 */
 /* 마이페이지 - 기업 공통 */
-.enterPage > div > div{background-color: #f8f8f8;}
-/* 마이페이지 - 기업 - 전환*/
-.enterPage > div .transformArea{padding: 50px; text-align: center;}
-.enterPage > div .transformArea strong{display: block; font-size: 22px; font-weight: 700; line-height: 30px; margin-bottom: 30px;}
-.enterPage > div .transformArea img{width: 160px; margin-bottom: 30px;}
+.enterPage > div > div{background-color: #f8f8f8; padding: 50px; text-align: center;}
+.enterPage > div > div strong{display: block; font-size: 22px; font-weight: 700;}
+.enterPage > div > div img{width: 160px; margin-bottom: 30px;}
+/* 마이페이지 - 기업 - 전환 */
+.enterPage > div .transformArea strong{line-height: 30px; margin-bottom: 30px;}
 .enterPage > div .transformArea button{width: 230px; margin: 0 auto;}
+/* 마이페이지 - 기업 - 심사 중 */
+.enterPage > div .reviewArea strong{margin-bottom: 20px;}
+.enterPage > div .reviewArea p{font-size: 15px; font-weight: 400;}
+.enterPage > div .reviewArea p:first-of-type{line-height: 20px; margin-bottom: 30px;}
+.enterPage > div .reviewArea p:nth-of-type(2){margin-bottom: 10px;}
+.enterPage > div .reviewArea a{font-size: 18px; font-weight: 700;}
