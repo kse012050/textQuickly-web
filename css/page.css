@@ -152,6 +152,10 @@
 .centerPage .inquiryPage fieldset input[type="submit"]{width: 195px;}
 
 
+/* 고객센터 , 로그인 공통 */
+:is(.singPage , .centerPage) .termsBox{height: 200px;}
+
+
 /* 로그인 */
 .singPage [class *='Page']{padding-top: 100px;}
 .singPage [class *='Page'] > :is(h2 , p){text-align: center;}

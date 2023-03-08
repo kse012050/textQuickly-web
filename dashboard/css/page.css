@@ -83,15 +83,16 @@
 .myPage > div > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
 .myPage > div > div > strong{display: block; font-size: 20px; font-weight: 700;}
 .myPage > div > div > small{display: block; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px;}
-.myPage > div > div :is(strong:not(:has(+ small)) , small){margin-bottom: 40px;}
+.myPage > div > div > :is(strong:not(:has(+ small)) , small){margin-bottom: 40px;}
 .myPage > div fieldset ul{margin-bottom: 40px;}
-.myPage > div fieldset ul li mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
-.myPage > div fieldset ul li mark.active{display: block;}
+.myPage > div fieldset ul li > mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
+.myPage > div fieldset ul li > mark.active{display: block;}
 .myPage > div fieldset .inputBox li div:has(select){flex-wrap: wrap;}
 .myPage > div fieldset .inputBox li div:has(select) input:first-of-type{width: 205px;}
 .myPage > div fieldset .inputBox li div:has(select) input:nth-of-type(2){width: 160px;}
 .myPage > div fieldset .inputBox li div select{width: 100%;}
 .myPage > div fieldset .inputBox li div input[type="checkbox"] +label:not(:last-of-type){margin-right: 50px;}
+.myPage > div fieldset :is(input[type="submit"] , input[type="reset"]){width: 100%;}
 
 
 /* 마이페이지 - 기업 , 회원탈퇴 공통 */
@@ -127,3 +128,11 @@
 .myPage > .secessionPage .infoArea ul li strong{display: block; font-size: 15px; font-weight: 700; line-height: 20px; margin-bottom: 15px;}
 .myPage > .secessionPage .infoArea ul li p{font-size: 14px; font-weight: 400; color: #999; line-height: 18px;}
 .myPage > .secessionPage .infoArea + button{width: 285px; margin: 60px auto 0;}
+
+/* 마이페이지 - 탈퇴 - 입력 */
+.myPage > .secessionPage fieldset .inputBox li:has(small) > label:first-child{margin-bottom: 7px;}
+.myPage > .secessionPage fieldset .inputBox li small{display: block; font-size: 14px; color: #999; margin-bottom: 15px;}
+.myPage > .secessionPage fieldset .inputBox li input[type="radio"] + label{display: flex; font-size: 15px; margin-bottom: 15px;}
+.myPage > .secessionPage fieldset .inputBox li textarea{width: 100%; height: 92px;}
+.myPage > .secessionPage fieldset .inputBox li .termsBox{font-size: 14px; line-height: 19px;}
+.myPage > .secessionPage fieldset input[type="submit"]{width: 100%;}

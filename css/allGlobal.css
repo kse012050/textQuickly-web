@@ -46,8 +46,8 @@ fieldset ul li div textarea{height: 300px;}
 fieldset .inputBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
 fieldset .inputBox li:not(.half){width: 100%;}
 fieldset .inputBox li.half{width: 47.79%;}
-fieldset .inputBox li > label{display: block; font-weight: 700; margin-bottom: 15px;}
-fieldset .inputBox li:not(:first-child , .half:first-child , .half:first-child + .half) > label{margin-top: 30px;}
+fieldset .inputBox li > label:first-of-type{display: flex; font-weight: 700; margin-bottom: 15px;}
+fieldset .inputBox li:not(:first-child , .half:first-child , .half:first-child + .half) > label:first-of-type{margin-top: 30px;}
 fieldset .inputBox li div{display: flex; gap: 10px;}
 fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
 fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
@@ -60,7 +60,6 @@ fieldset .inputBox li div:has(mark) mark.error{right: 15px; font-size: 12px;}
 fieldset .inputBox li div:has(time) time{right: 20px; font-size: 14px;}
 fieldset .inputBox li div *:first-child{flex: 1;}
 fieldset input[type="submit"]{margin: 0 auto;}
-.termsBox{height: 200px;}
 
 
 /* 해더 공통 */
