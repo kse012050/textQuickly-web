@@ -43,6 +43,7 @@
 .homePage .historyArea ul li:first-child{font-weight: 700; height: 55px; text-align: center;}
 .homePage .historyArea ul li:not(:first-child){height: 75px;}
 .homePage .historyArea ul li:not(:first-child) b:not(:nth-child(2)){text-align: center;}
+.homePage .historyArea ul li > *:not(:nth-child(2)){text-align: center;}
 .homePage .historyArea ul li > *{padding: 0 10px;}
 .homePage .historyArea ul li > *:nth-child(1){width: 130px;}
 .homePage .historyArea ul li > *:nth-child(2){width: 275px;}
@@ -73,6 +74,10 @@
 .homePage .statisticsArea ul > li ol li small{display: block; font-size: 14px; font-weight: 400; color: #999; padding-top: 12px; border-top: 1px solid #dedede;}
 
 
+/* 마이페이지 , 문자보내기 공통 */
+:is(.myPage , .messagePage) > div > div > strong{display: block; font-size: 20px; font-weight: 700;}
+
+
 /* 마이페이지 */
 /* 마이페이지 공통 */
 .myPage > div > h2{text-align: center; margin-bottom: 50px;}
@@ -81,7 +86,6 @@
 .myPage > div > ul li{flex: 1;}
 .myPage > div > ul li a{display: block; font-size: 15px; line-height: 45px; text-align: center; border: 1px solid #dedede;}
 .myPage > div > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
-.myPage > div > div > strong{display: block; font-size: 20px; font-weight: 700;}
 .myPage > div > div > small{display: block; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px;}
 .myPage > div > div > :is(strong:not(:has(+ small)) , small){margin-bottom: 40px;}
 .myPage > div fieldset ul{margin-bottom: 40px;}
@@ -136,3 +140,9 @@
 .myPage > .secessionPage fieldset .inputBox li textarea{width: 100%; height: 92px;}
 .myPage > .secessionPage fieldset .inputBox li .termsBox{font-size: 14px; line-height: 19px;}
 .myPage > .secessionPage fieldset input[type="submit"]{width: 100%;}
+
+
+/* 문자 보내기 */
+.messagePage > div h2{margin-bottom: 60px;}
+.messagePage > div .inputArea{padding-right: 410px;}
+.messagePage > div .inputArea hr{border-bottom: none; border-top: 1px solid #dedede; margin: 38.5px 0 39.5px;}
