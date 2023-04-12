@@ -98,17 +98,17 @@
                                             <textarea></textarea>
                                         </div>
                                         <div class="checkBox">
-                                            <input type="checkbox">
+                                            <input type="checkbox" checked>
                                             <label for=""><em>광고성 문자</em> 일 경우 체크</label>
                                         </div>
                                         <div class="buttonBox">
                                             <button>#(변수) 추가</button>
-                                            <span>0 <mark>/ 90Byte</mark></span>
+                                            <span class="byte">0 <mark>90</mark></span>
                                         </div>
                                     </li>
                                     <li class="row">
                                         <label for="">이미지첨부</label>
-                                        <input type="radio">
+                                        <input type="radio" checked>
                                         <label for="">없음</label>
                                         <input type="radio">
                                         <label for="">이미지</label>
@@ -129,12 +129,12 @@
                                             <button>최근 전송 내역</button>
                                             <button>주소록 불러오기</button>
                                             <button>파일 불러오기</button>
-                                            <span>0</span>
+                                            <span class="count">0</span>
                                         </div>
                                     </li>
                                     <li class="row">
                                         <label for="">전송시각</label>
-                                        <input type="radio">
+                                        <input type="radio" checked>
                                         <label for="">즉시전송</label>
                                         <input type="radio">
                                         <label for="">예약전송</label>
@@ -144,9 +144,64 @@
                         </form>
                     </div>
 
-                    <div>
+                    <div class="sendResult">
                         <strong>전송 예상 결과</strong>
+                        <ul class="boardBox">
+                            <li>
+                                <b>메시지 타입</b>
+                                <b>요금 (부가세 포함)</b>
+                                <b>총 건수</b>
+                                <b>정상 건수</b>
+                                <b>오류 건수</b>
+                                <b>예상 금액</b>
+                            </li>
+                            <li>
+                                <p>장문 (LMS)</p>
+                                <p>15.3원</p>
+                                <p>1건</p>
+                                <p>1건</p>
+                                <p>0건</p>
+                                <p>16원</p>
+                            </li>
+                        </ul>
+                        <div class="noteBox">
+                            <b></b>
+                            <ul>
+                                <li><mark>정상 건수만 전송되며 용량 및 네트워크 환경에 따라 소요시간이 오래 걸릴 수 있습니다.</mark></li>
+                                <li>오류 건수는 잘못된 수신번호 개수 입니다.</li>
+                            </ul>
+                        </div>
+                    </div>
 
+                    <div class="sendAmount">
+                        <div class="amountArea">
+                            <div>
+                                <b>전송 금액</b>
+                                <strong>16원</strong>
+                                <small>(부가세 포함)</small>
+                            </div>
+                            <ul>
+                                <li>
+                                    <p>내 충전금</p>
+                                    <b>10,000,000원</b>
+                                    <button>충전</button>
+                                    <span>0원</span>
+                                </li>
+                                <li>
+                                    <p>내 보너스 포인트</p>
+                                    <b>1,000원</b>
+                                    <input type="text" value="16원" class="inputCase">
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="noteBox">
+                            <b>전송 시 유의사항</b>
+                            <ul>
+                                <li>전송결과는 초대 SMS 24시간, LMS/MMS는 72시간 이내 완료됩니다.</li>
+                                <li>최종결제는 전송결과 완료 후 성공된 메시지만 계산됩니다.</li>
+                                <li><mark>보너스 포인트가 우선 소모가 됩니다.</mark></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <footer>

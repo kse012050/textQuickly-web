@@ -28,6 +28,10 @@ input[type="checkbox"]:checked + label::before{background-image: url('../images/
 input[type="radio"] + label::before{background-image: url('../images/icon-radio.png');}
 input[type="radio"]:checked + label::before{background-image: url('../images/icon-radio-chekced.png');}
 
+/* Byte */
+.byte mark::before{content: '/ ';}
+.byte mark::after{content: 'Byte';}
+
 
 /* form */
 [class*="width"]{margin: 0 auto;}
@@ -50,11 +54,11 @@ fieldset .inputBox li > label:first-of-type{display: flex; font-weight: 700;}
 fieldset .inputBox li:not(.row) > label:first-of-type{margin-bottom: 15px;}
 fieldset .inputBox li:not(:first-child , .half:first-child , .half:first-child + .half , .row) > label:first-of-type{margin-top: 30px;}
 fieldset .inputBox li div{display: flex;}
-fieldset .inputBox li div:not(.buttonBox){gap: 10px;}
+fieldset .inputBox li div:not(:is(.buttonBox , .checkBox)){gap: 10px;}
 fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
 fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
 fieldset .inputBox li div :is(input , textarea){flex: 1;}
-fieldset .inputBox li div:has(input) ~ div{margin-top: 10px;}
+fieldset .inputBox li div:has(input) ~ div:not(.checkBox){margin-top: 10px;}
 fieldset .inputBox li div:not(:is( textarea , .termsBox)){align-items: center;}
 fieldset .inputBox li div:has(button , mark , time):has(input[type="text"]){position: relative;}
 fieldset .inputBox li div:has(button , mark , time) input + :is(button , mark , time){position: absolute; top: 50%; transform: translateY(-50%);}
@@ -72,6 +76,7 @@ fieldset .inputBox li.row:not(:has(input[type="radio"])) label:first-of-type{mar
 fieldset .inputBox li.row:has(input[type="radio"]) label:first-of-type{margin-right: 40px;}
 fieldset .inputBox li.row:has(input[type="radio"]) label:not(:is(:first-of-type , :last-of-type)){margin-right: 30px;}
 fieldset input[type="submit"]{margin: 0 auto;}
+.inputCase{height: 50px; padding: 0 20px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
 
 
 /* 해더 공통 */

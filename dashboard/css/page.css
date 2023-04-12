@@ -35,13 +35,16 @@
 .homePage .cashArea > div:nth-child(3) ul li p b{font-weight: 700;}
 .homePage .cashArea > div:nth-child(3) ul li strong{font-size: 26px; font-weight: 800;}
 .homePage .cashArea > div:nth-child(3) ul li strong::after{content: '건'; font-size: 16px; font-weight: 400;}
-.homePage .cashArea > div:nth-child(3) a{}
 
 /* 홈 - 사용내역 */
-.homePage .historyArea ul{border-top: 1px solid #111;}
-.homePage .historyArea ul li{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;}
-.homePage .historyArea ul li:first-child{font-weight: 700; height: 55px; text-align: center;}
-.homePage .historyArea ul li:not(:first-child){height: 75px;}
+.boardBox{border-top: 1px solid #111;}
+.boardBox li{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;}
+.boardBox li:first-child{font-weight: 700; height: 55px; text-align: center;}
+.boardBox li:not(:first-child){height: 75px;}
+/* .homePage .historyArea ul{border-top: 1px solid #111;} */
+/* .homePage .historyArea ul li{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;} */
+/* .homePage .historyArea ul li:first-child{font-weight: 700; height: 55px; text-align: center;} */
+/* .homePage .historyArea ul li:not(:first-child){height: 75px;} */
 .homePage .historyArea ul li:not(:first-child) b:not(:nth-child(2)){text-align: center;}
 .homePage .historyArea ul li > *:not(:nth-child(2)){text-align: center;}
 .homePage .historyArea ul li > *{padding: 0 10px;}
@@ -141,8 +144,41 @@
 .myPage > .secessionPage fieldset .inputBox li .termsBox{font-size: 14px; line-height: 19px;}
 .myPage > .secessionPage fieldset input[type="submit"]{width: 100%;}
 
-
 /* 문자 보내기 */
 .messagePage > div h2{margin-bottom: 60px;}
+/* 문자 보내기 - 입력 */
 .messagePage > div .inputArea{padding-right: 410px;}
 .messagePage > div .inputArea hr{border-bottom: none; border-top: 1px solid #dedede; margin: 38.5px 0 39.5px;}
+.messagePage > div .inputArea .inputBox li:has(.checkBox){position: relative;}
+.messagePage > div .inputArea .inputBox li .checkBox{position: absolute; right: 0; top: 30px;}
+.messagePage > div .inputArea .inputBox li .buttonBox .count::before{content: '총 ';}
+.messagePage > div .inputArea .inputBox li .buttonBox .count::after{content: '건';}
+/* 문자 보내기 - 전송 예상 결과 */
+.messagePage > div .sendResult strong{margin-bottom: 19.5px;}
+.messagePage > div .sendResult .boardBox li{padding-left: 40px; text-align: center;}
+.messagePage > div .sendResult .boardBox li *:not(:last-child){margin-right: 95px;}
+.messagePage > div .sendResult .boardBox li *:nth-child(1){width: 70px;}
+.messagePage > div .sendResult .boardBox li *:nth-child(2){width: 110px;}
+.messagePage > div .sendResult .boardBox li *:nth-child(3){width: 43px;}
+.messagePage > div .sendResult .boardBox li *:nth-child(4){width: 56px;}
+.messagePage > div .sendResult .boardBox li *:nth-child(5){width: 56px;}
+.messagePage > div .sendResult .boardBox li *:nth-child(6){width: 56px;}
+/* 문자 보내기 - 유의사항 */
+.messagePage > div div .noteBox{font-size: 14px; line-height: 22px; color: #999; margin-top: 15px;}
+.messagePage > div div .noteBox b{font-weight: 700;}
+.messagePage > div div .noteBox ul li::before{content: '- ';}
+.messagePage > div div .noteBox ul li:has(mark)::before{color: #00a56b;}
+/* 문자 보내기 - 금액 */
+.messagePage > div .sendAmount .amountArea{display: flex; padding: 35px 40px; border: 1px solid #dedede;}
+.messagePage > div .sendAmount .amountArea div{width: 280px; display: flex; flex-direction: column; align-items: flex-end; padding: 5px 49.5px 5px 0; border-right: 1px solid #dedede; margin-right: 49.5px;}
+.messagePage > div .sendAmount .amountArea div b{font-size: 20px; font-weight: 700; align-self: flex-start;}
+.messagePage > div .sendAmount .amountArea div strong{font-size: 22px; font-weight: 700; margin-top: auto; margin-bottom: 10px;}
+.messagePage > div .sendAmount .amountArea div small{font-size: 14px; color: #999;}
+.messagePage > div .sendAmount .amountArea ul{flex: 1; display: flex; flex-direction: column; justify-content: center; padding: 16px 0 5px;}
+.messagePage > div .sendAmount .amountArea ul li{display: flex; align-items: center;}
+.messagePage > div .sendAmount .amountArea ul li:not(:last-child){margin-bottom: 30px;}
+.messagePage > div .sendAmount .amountArea ul li p{width: 128px; font-size: 15px; font-weight: 400;}
+.messagePage > div .sendAmount .amountArea ul li b{font-size: 18px; font-weight: 700;}
+.messagePage > div .sendAmount .amountArea ul li button{font-size: 14px; color: white; font-weight: 700; padding: 7px 10px; background-color: #2de09f; border-radius: 6px; margin-left: 10px;}
+.messagePage > div .sendAmount .amountArea ul li input.inputCase{width: 150px; text-align: right;}
+.messagePage > div .sendAmount .amountArea ul li *:last-child{font-size: 15px; margin-left: auto;}
