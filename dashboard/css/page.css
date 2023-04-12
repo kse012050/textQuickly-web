@@ -37,14 +37,6 @@
 .homePage .cashArea > div:nth-child(3) ul li strong::after{content: '건'; font-size: 16px; font-weight: 400;}
 
 /* 홈 - 사용내역 */
-.boardBox{border-top: 1px solid #111;}
-.boardBox li{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;}
-.boardBox li:first-child{font-weight: 700; height: 55px; text-align: center;}
-.boardBox li:not(:first-child){height: 75px;}
-/* .homePage .historyArea ul{border-top: 1px solid #111;} */
-/* .homePage .historyArea ul li{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;} */
-/* .homePage .historyArea ul li:first-child{font-weight: 700; height: 55px; text-align: center;} */
-/* .homePage .historyArea ul li:not(:first-child){height: 75px;} */
 .homePage .historyArea ul li:not(:first-child) b:not(:nth-child(2)){text-align: center;}
 .homePage .historyArea ul li > *:not(:nth-child(2)){text-align: center;}
 .homePage .historyArea ul li > *{padding: 0 10px;}
@@ -188,4 +180,39 @@
 .messagePage .finPage img{max-width: 150px; margin-bottom: 40px;}
 .messagePage .finPage strong{display: block; font-size: 36px; font-weight: 700; margin-bottom: 30px;}
 .messagePage .finPage p{font-size: 15px; font-weight: 400; margin-bottom: 60px;}
-.messagePage .finPage .btn-color{max-width: 230px; margin: 0 auto;}
+.messagePage .finPage .btn-color{display: inline-flex; padding: 0 60px;}
+
+
+/* 충전하기 */
+.chargePage .basicPage > .subTextBox{margin: 15px 0 60px;}
+.chargePage .basicPage fieldset{border-top: 1px solid #111;}
+.chargePage .basicPage fieldset > div{border-bottom: 1px solid #dedede; padding-right: 50px; padding-left: 40px;}
+.chargePage .basicPage fieldset > div b{font-size: 20px; font-weight: 700;}
+.chargePage .basicPage fieldset .methodArea{display: flex; align-items: center; min-height: 103px;}
+.chargePage .basicPage fieldset .methodArea b{margin-right: 60px;}
+.chargePage .basicPage fieldset .methodArea label:not(:last-child){margin-right: 40px;}
+.chargePage .basicPage fieldset .amountArea{display: flex; min-height: 152px; padding-top: 34.5px; padding-bottom: 34.5px;}
+.chargePage .basicPage fieldset .amountArea > div{flex: 1; display: flex; flex-direction: column; align-items: flex-end; padding: 5px 49.5px 5px 0; margin-right: 49.5px; border-right: 1px solid #dedede;}
+.chargePage .basicPage fieldset .amountArea > div b{align-self: flex-start;}
+.chargePage .basicPage fieldset .amountArea > div strong{font-size: 22px; font-weight: 700; margin-top: auto; margin-bottom: 30px;}
+.chargePage .basicPage fieldset .amountArea > div .buttonBox button:not([class]){padding: 0 23px;}
+.chargePage .basicPage fieldset .amountArea > div .buttonBox button.imgBox{width: 40px; background-image: url('../images/icon-reset.png'); background-size: 24px;}
+.chargePage .basicPage fieldset .amountArea ul{width: 220px; padding: 5px 0;}
+.chargePage .basicPage fieldset .amountArea ul::before{content: attr(title); display: block; font-weight: 700; margin-bottom: 31px;}
+.chargePage .basicPage fieldset .amountArea ul li{display: flex; justify-content: space-between; align-items: center; font-weight: 400;}
+.chargePage .basicPage fieldset .amountArea ul li span{font-size: 14px; color: #999;}
+.chargePage .basicPage fieldset .amountArea ul li:not(:last-child){margin-bottom: 22px;}
+.chargePage .basicPage fieldset .totalArea{min-height: 132px; display: flex; justify-content: flex-end; align-items: center; background-color: #f8f8f8;}
+.chargePage .basicPage fieldset .totalArea b{margin-right: auto;}
+.chargePage .basicPage fieldset .totalArea div{text-align: right;}
+.chargePage .basicPage fieldset .totalArea div:not(:last-child){margin-right: 60px;}
+.chargePage .basicPage fieldset .totalArea div *:first-child{display: block; font-weight: 700; line-height: 29px;}
+.chargePage .basicPage fieldset .totalArea div mark{font-size: 24px;}
+.chargePage .basicPage fieldset .totalArea div small{display: block; font-size: 14px; margin-top: 7px;}
+.chargePage .basicPage fieldset .totalArea div:first-of-type small{color: #999;}
+.chargePage .basicPage fieldset .subTextBox{display: block; margin-top: 20px;}
+.chargePage .basicPage fieldset input[type="submit"]{width: 194px; margin-top: 60px;}
+
+
+
+

@@ -64,3 +64,14 @@ input:is([type="submit"],[type="reset"])[class|='btn']{font-size: 20px; width: 1
 .dashboardPage .rightAside footer ul{margin-bottom: 20px;}
 .dashboardPage .rightAside footer address p{font-size: 13px; font-weight: 500; color: #666;}
 .dashboardPage .rightAside footer address p:not(:last-child){margin-bottom: 12px;}
+
+
+/* 게시판 공통 */
+.boardBox{border-top: 1px solid #111;}
+.boardBox li{display: flex; align-items: center; font-size: 15px; border-bottom: 1px solid #dedede;}
+.boardBox li:first-child{font-weight: 700; height: 55px; text-align: center;}
+.boardBox li:not(:first-child){height: 75px;}
+
+
+/* 서브 텍스트 */
+.subTextBox{font-size: 15px; line-height: 22px; color: #999;}

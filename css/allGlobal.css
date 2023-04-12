@@ -62,12 +62,13 @@ fieldset .inputBox li div:not(:is( textarea , .termsBox)){align-items: center;}
 fieldset .inputBox li div:has(button , mark , time):has(input[type="text"]){position: relative;}
 fieldset .inputBox li div:has(button , mark , time) input + :is(button , mark , time){position: absolute; top: 50%; transform: translateY(-50%);}
 fieldset .inputBox li div:has(button) input + button{right: 5px;}
-fieldset .inputBox li div:has(button) button{font-size: 14px; font-weight: 400; color: #999; height: 40px; padding: 0 15px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
+/* fieldset .inputBox li div:has(button) button{font-size: 14px; font-weight: 400; color: #999; height: 40px; padding: 0 15px; background-color: white; border: 1px solid #dedede; border-radius: 6px;} */
+fieldset button{font-size: 14px; font-weight: 400; color: #999; height: 40px; padding: 0 15px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
+fieldset .buttonBox{gap: 10px 7px;}
+fieldset .buttonBox span{margin-left: auto;}
 fieldset .inputBox li div:has(mark , time) :is(mark.error , time){color: #eb2f2f;}
 fieldset .inputBox li div:has(mark) mark.error{right: 15px; font-size: 12px;}
 fieldset .inputBox li div:has(time) time{right: 20px; font-size: 14px;}
-fieldset .inputBox li div.buttonBox{gap: 10px 7px;}
-fieldset .inputBox li div.buttonBox span{margin-left: auto;}
 fieldset .inputBox li.row{display: flex; align-items: center;}
 fieldset .inputBox li.row:not(:first-child){margin-top: 30px;}
 fieldset .inputBox li.row div{flex: 1;}
@@ -75,6 +76,8 @@ fieldset .inputBox li.row:not(:has(input[type="radio"])) label:first-of-type{mar
 fieldset .inputBox li.row:has(input[type="radio"]) label:first-of-type{margin-right: 40px;}
 fieldset .inputBox li.row:has(input[type="radio"]) label:not(:is(:first-of-type , :last-of-type)){margin-right: 30px;}
 fieldset input[type="submit"]{margin: 0 auto;}
+fieldset:not(:has(.inputBox)) .buttonBox{display: flex;}
+
 .inputCase{height: 50px; padding: 0 20px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
 
 
