@@ -74,4 +74,4 @@ input:is([type="submit"],[type="reset"])[class|='btn']{font-size: 20px; width: 1
 
 
 /* 서브 텍스트 */
-.subTextBox{font-size: 15px; line-height: 22px; color: #999;}
+.subTextBox{display: block; font-size: 15px; line-height: 22px; color: #999;}

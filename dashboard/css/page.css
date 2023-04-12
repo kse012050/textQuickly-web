@@ -81,7 +81,8 @@
 .myPage > div > ul li{flex: 1;}
 .myPage > div > ul li a{display: block; font-size: 15px; line-height: 45px; text-align: center; border: 1px solid #dedede;}
 .myPage > div > ul li:is(:hover , .active) a{color: #2de09f; font-weight: 700; border-color: #2de09f;}
-.myPage > div > div > small{display: block; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px;}
+/* .myPage > div > div > small{display: block; font-size: 15px; font-weight: 400; color: #999; line-height: 20px; margin-top: 10px;} */
+.myPage > div > div > small{margin-top: 10px;}
 .myPage > div > div > :is(strong:not(:has(+ small)) , small){margin-bottom: 40px;}
 .myPage > div fieldset ul{margin-bottom: 40px;}
 .myPage > div fieldset ul li > mark{display: none; font-size: 13px; color: #00a56b; margin-top: 15px;}
@@ -210,7 +211,7 @@
 .chargePage .basicPage fieldset .totalArea div mark{font-size: 24px;}
 .chargePage .basicPage fieldset .totalArea div small{display: block; font-size: 14px; margin-top: 7px;}
 .chargePage .basicPage fieldset .totalArea div:first-of-type small{color: #999;}
-.chargePage .basicPage fieldset .subTextBox{display: block; margin-top: 20px;}
+.chargePage .basicPage fieldset .subTextBox{margin-top: 20px;}
 .chargePage .basicPage fieldset input[type="submit"]{width: 194px; margin-top: 60px;}
 
 
