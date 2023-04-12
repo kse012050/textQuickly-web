@@ -185,7 +185,6 @@
 
 
 /* 충전하기 */
-.chargePage .basicPage > .subTextBox{margin: 15px 0 60px;}
 .chargePage .basicPage fieldset{border-top: 1px solid #111;}
 .chargePage .basicPage fieldset > div{border-bottom: 1px solid #dedede; padding-right: 50px; padding-left: 40px;}
 .chargePage .basicPage fieldset > div b{font-size: 20px; font-weight: 700;}
@@ -215,5 +214,20 @@
 .chargePage .basicPage fieldset input[type="submit"]{width: 194px; margin-top: 60px;}
 
 
+/* 충전하기 , 내역 공통 */
+:is(.chargePage , .historyPage) > div > .subTextBox{margin-bottom: 60px;}
+:is(.chargePage , .historyPage) > div > .subTextBox:not(:has(*)){margin-top: 15px;}
+:is(.chargePage , .historyPage) > div > .subTextBox:has(*){margin-top: 20px;}
 
+
+/* 내역 */
+/* 내역 공통 */
+.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center;}
+.historyPage .seachBox > button{font-size: 14px; font-weight: 500; color: #999; padding: 0 15px;}
+.historyPage .seachBox > button:not([class]):has(+ button){border-right: 1px solid #dedede;}
+.historyPage .seachBox > button:is(.active , :hover){color: #2de09f; font-weight: 700;}
+.historyPage .seachBox input[readonly]{width: 150px; font-size: 15px;}
+.historyPage .seachBox span{margin: 0 7px;}
+.historyPage .seachBox .imgBox{width: 26px; height: 26px; background-image: url('../images/icon-search.png'); margin-left: 10px;}
+/* 충전내역 */
 

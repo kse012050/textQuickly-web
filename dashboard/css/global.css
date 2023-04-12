@@ -75,3 +75,6 @@ input:is([type="submit"],[type="reset"])[class|='btn']{font-size: 20px; width: 1
 
 /* 서브 텍스트 */
 .subTextBox{display: block; font-size: 15px; line-height: 22px; color: #999;}
+
+
+/* 히스토리 - 서치 박스 */
