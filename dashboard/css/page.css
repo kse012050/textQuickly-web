@@ -175,12 +175,12 @@
 .messagePage > .basicPage .sendAmount .amountArea ul li input.inputCase{width: 150px; text-align: right;}
 .messagePage > .basicPage .sendAmount .amountArea ul li *:last-child{font-size: 15px; margin-left: auto;}
 
-/* 문자 보내기 - 완료 */
-.messagePage .finPage{padding: 140px 0 75px; text-align: center;}
-.messagePage .finPage img{max-width: 150px; margin-bottom: 40px;}
-.messagePage .finPage strong{display: block; font-size: 36px; font-weight: 700; margin-bottom: 30px;}
-.messagePage .finPage p{font-size: 15px; font-weight: 400; margin-bottom: 60px;}
-.messagePage .finPage .btn-color{display: inline-flex; padding: 0 60px;}
+/* 문자 보내기  , 충전하기 공통 */
+:is(.messagePage , .chargePage) .finPage{padding: 140px 0 75px; text-align: center;}
+:is(.messagePage , .chargePage) .finPage img{max-width: 150px; margin-bottom: 40px;}
+:is(.messagePage , .chargePage) .finPage strong{display: block; font-size: 36px; font-weight: 700; margin-bottom: 30px;}
+:is(.messagePage , .chargePage) .finPage p{font-size: 15px; font-weight: 400; margin-bottom: 60px;}
+:is(.messagePage , .chargePage) .finPage .btn-color{display: inline-flex; padding: 0 60px;}
 
 
 /* 충전하기 */
