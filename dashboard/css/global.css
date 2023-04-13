@@ -43,7 +43,7 @@ input:is([type="submit"],[type="reset"])[class|='btn']{font-size: 20px; width: 1
 /* 컨텐츠 */
 .dashboardPage > section{flex: 1; padding-top: 60px;}
 .dashboardPage > section > div > :is(h2 , h3){font-size: 32px; font-weight: 700;}
-.dashboardPage > section > div > div:not(:last-child){margin-bottom: 80px;}
+.dashboardPage > section > div > div:not(:last-child , .seachBox){margin-bottom: 80px;}
 /* 오른쪽 aside */
 .dashboardPage .rightAside time{font-size: 15px; color: #999;}
 .dashboardPage .rightAside{width: 430px; padding: 60px 40px; box-sizing: border-box; border-left: 1px solid #dedede;}

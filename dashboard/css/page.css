@@ -222,12 +222,30 @@
 
 /* 내역 */
 /* 내역 공통 */
-.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center;}
+.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center; margin-bottom: 14.5px;}
 .historyPage .seachBox > button{font-size: 14px; font-weight: 500; color: #999; padding: 0 15px;}
 .historyPage .seachBox > button:not([class]):has(+ button){border-right: 1px solid #dedede;}
 .historyPage .seachBox > button:is(.active , :hover){color: #2de09f; font-weight: 700;}
 .historyPage .seachBox input[readonly]{width: 150px; font-size: 15px;}
 .historyPage .seachBox span{margin: 0 7px;}
 .historyPage .seachBox .imgBox{width: 26px; height: 26px; background-image: url('../images/icon-search.png'); margin-left: 10px;}
+.historyPage .pagerBox{display: flex; justify-content: center; align-items: center; margin-top: 59.5px;}
+.historyPage .pagerBox > a{text-indent: -9999px; width: 24px; height: 24px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+.historyPage .pagerBox > a:nth-of-type(1){background-image: url('../images/icon-first.png'); margin-right: 5px;}
+.historyPage .pagerBox > a:nth-of-type(2){background-image: url('../images/icon-prev.png');}
+.historyPage .pagerBox > a:nth-of-type(3){background-image: url('../images/icon-next.png');}
+.historyPage .pagerBox > a:nth-of-type(4){background-image: url('../images/icon-end.png'); margin-left: 5px;}
+.historyPage .pagerBox ol{display: flex; align-items: center;}
+.historyPage .pagerBox ol li a{display: block; width: 47px; font-size: 15px; font-weight: 700; line-height: 24px; text-align: center;}
+.historyPage .pagerBox ol li:is(.active , :hover) a{color: #2de09f; text-decoration: underline;}
 /* 충전내역 */
+.historyPage .history-chargePage .boardBox{text-align: center;}
+.historyPage .history-chargePage .boardBox li{padding: 0 40px;}
+.historyPage .history-chargePage .boardBox li *:nth-child(1){width: 74px; margin-right: 80px;}
+.historyPage .history-chargePage .boardBox li *:nth-child(2){width: 68px; margin-right: 109px;}
+.historyPage .history-chargePage .boardBox li *:nth-child(3){width: 68px; margin-right: 94px;}
+.historyPage .history-chargePage .boardBox li *:nth-child(4){width: 110px; margin-right: 74px;}
+.historyPage .history-chargePage .boardBox li *:nth-child(5){width: 84px; margin-right: 80px;}
+.historyPage .history-chargePage .boardBox li *:nth-child(6){width: 39px;}
+.historyPage .history-chargePage .boardBox li:not(:first-child) *:nth-child(n + 4):nth-child(-n + 5){text-align: right;}
 
