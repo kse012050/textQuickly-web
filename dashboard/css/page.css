@@ -222,11 +222,13 @@
 
 /* 내역 */
 /* 내역 공통 */
-.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center; margin-bottom: 14.5px;}
+.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center; font-size: 15px; margin-bottom: 14.5px;}
 .historyPage .seachBox > button{font-size: 14px; font-weight: 500; color: #999; padding: 0 15px;}
 .historyPage .seachBox > button:not([class]):has(+ button){border-right: 1px solid #dedede;}
 .historyPage .seachBox > button:is(.active , :hover){color: #2de09f; font-weight: 700;}
-.historyPage .seachBox input[readonly]{width: 150px; font-size: 15px;}
+.historyPage .seachBox :is(input[readonly] , .selectBox){width: 150px;}
+.historyPage .seachBox input:not([readonly]){width: 260px;}
+.historyPage .seachBox :is(.selectBox , input:not([readonly])){margin-left: 15px;}
 .historyPage .seachBox span{margin: 0 7px;}
 .historyPage .seachBox .imgBox{width: 26px; height: 26px; background-image: url('../images/icon-search.png'); margin-left: 10px;}
 .historyPage .pagerBox{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
@@ -249,7 +251,6 @@
 .historyPage .history-chargePage .boardBox li *:nth-child(6){width: 39px;}
 .historyPage .history-chargePage .boardBox li:not(:first-child) *:nth-child(n + 4):nth-child(-n + 5){text-align: right;}
 /* 내역 - 사용내역 */
-.historyPage .usePage .boardBox{}
 .historyPage .usePage .boardBox li{padding: 0 40px;}
 .historyPage .usePage .boardBox li *:not(:last-child){margin-right: 60px;}
 .historyPage .usePage .boardBox li *:nth-child(1){width: 74px;}
@@ -258,3 +259,21 @@
 .historyPage .usePage .boardBox li *:nth-child(4){width: 92px;}
 .historyPage .usePage .boardBox li *:nth-child(5){width: 85px;}
 .historyPage .usePage .boardBox li *:nth-child(6){width: 85px;}
+/* 내역 - 전송내역 */
+.historyPage .sendPage .boardBox{text-align: center; line-height: 22px;}
+.historyPage .sendPage .boardBox li:not(:first-child) a{height: 100%; display: flex; align-items: center;}
+.historyPage .sendPage .boardBox :is(li:first-child, li:not(:first-child) a){padding: 0 30px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(1){width: 72px; margin-right: 50px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(2){width: 162px; margin-right: 50px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(3){width: 42px; margin-right: 45px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(4){width: 66px; margin-right: 42px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(5){width: 66px;; margin-right: 40px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(6){width: 66px; margin-right: 35px;}
+.historyPage .sendPage .boardBox :is(li:first-child *, li:not(:first-child) a *):nth-child(7){width: 56px; margin-right: 55px;}
+.historyPage .sendPage .boardBox li:not(:first-child) a[data-result]::after{content: attr(data-result);}
+.historyPage .sendPage .boardBox li:not(:first-child) a[data-result]:not([data-result="완료"])::after{font-weight: 700;}
+.historyPage .sendPage .boardBox li:not(:first-child) a[data-result="실패"]::after{color: #cecece;}
+.historyPage .sendPage .boardBox li:not(:first-child) a[data-result="진행중"]::after{color: #2de09f;}
+.historyPage .sendPage .boardBox li:not(:first-child) a::after , 
+.historyPage .sendPage .boardBox li:first-child *:nth-child(8){width: 52px;}
+.historyPage .sendPage .boardBox li:not(:first-child) a *:nth-child(2){text-align: left; text-decoration: underline;}

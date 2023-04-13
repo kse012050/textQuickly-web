@@ -78,7 +78,9 @@ fieldset .inputBox li.row:has(input[type="radio"]) label:not(:is(:first-of-type 
 fieldset input[type="submit"]{margin: 0 auto;}
 fieldset:not(:has(.inputBox)) .buttonBox{display: flex;}
 
-:is(.inputCase , .historyPage .seachBox input){height: 50px; padding: 0 20px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
+:is(.inputCase , .historyPage .seachBox :is(input , .selectBox)){height: 50px; padding: 0 15px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
+:is(.inputCase , .historyPage .seachBox :is(input , .selectBox))::placeholder{color: #999;}
+.historyPage .seachBox .selectBox{display: inline-flex; align-items: center;}
 
 
 /* 해더 공통 */

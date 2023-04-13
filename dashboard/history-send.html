@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>사용내역 - 문자빨리</title>
+    <title>전송내역 - 문자빨리</title>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- swiper -->
@@ -77,14 +77,14 @@
             </aside>
 
             <section class="historyPage">
-                <div class="usePage">
+                <div class="sendPage">
                     <h2>충전내역</h2>
-                    <small class="subTextBox">최근 5년 사용내역을 확인할 수 있습니다.</small>
+                    <ol class="subTextBox">
+                        <li>1. 최근 90일 동안 전송된 메시지를 확인할 수 있습니다.</li>
+                        <li>2. 전송결과 완료 후 메시지 실패 건은 다시 재충전 됩니다.</li>
+                        <li>3. 문자메시지 (SMS/LMS/MMS)는 최대 72시간, 카카오톡 메시지는 최대 24시간까지 ‘진행중’표시가 나타날 수 있습니다.</li>
+                    </ol>
                     <div class="seachBox">
-                        <button class="active">오늘</button>
-                        <button>1주일</button>
-                        <button>1개월</button>
-                        <button>3개월</button>
                         <div>
                             <input type="text" readonly value="2023.02.01">
                         </div>
@@ -92,111 +92,83 @@
                         <div>
                             <input type="text" readonly value="2023.02.01">
                         </div>
+                        <div>
+                            <div class="selectBox">
+                                메시지 타입
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="제목 또는 내용 입력">
+                        </div>
                         <button class="imgBox">검색</button>
                     </div>
                     <ul class="boardBox">
                         <li>
-                            <b>일자</b>
-                            <b>내용</b>
+                            <b>전송일자</b>
+                            <b>제목</b>
                             <b>구분</b>
-                            <b>충전</b>
-                            <b>사용</b>
-                            <b>잔액</b>
+                            <b>전송건수</b>
+                            <b>성공</b>
+                            <b>실패</b>
+                            <b>대기</b>
+                            <b>전송결과</b>
                         </li>
                         <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
+                            <a href="" data-result="완료">
+                                <time>2022.01.12 16:53</time>
+                                <p>1234</p>
+                                <p>단문 (SMS)</p>
+                                <p>9,856,751</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                                <p>0</p>
+                            </a>
                         </li>
                         <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
+                            <a href="" data-result="완료">
+                                <time>2022.01.12 16:53</time>
+                                <p>테스트테스트테스트</p>
+                                <p>장문 (LMS)</p>
+                                <p>9,856,751</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                                <p>0</p>
+                            </a>
                         </li>
                         <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
+                            <a href="" data-result="실패">
+                                <time>2022.01.12 16:53</time>
+                                <p>첫시작</p>
+                                <p>멀티 (LMS)</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                            </a>
                         </li>
                         <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
+                            <a href="" data-result="진행중">
+                                <time>2022.01.12 16:53</time>
+                                <p>안녕하세요</p>
+                                <p>단문 (SMS)</p>
+                                <p>9,856,751</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                                <p>900,000</p>
+                            </a>
                         </li>
                         <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
-                        </li>
-                        <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
-                        </li>
-                        <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
-                        </li>
-                        <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
-                        </li>
-                        <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
-                        </li>
-                        <li>
-                            <time>2023.02.16</time>
-                            <p>테스트입니다 테스트예요 테…</p>
-                            <p>멀티(MMS)</p>
-                            <p>123,123,123원</p>
-                            <p>8,999,999원</p>
-                            <p>9,999,999원</p>
+                            <a href="" data-result="실패">
+                                <time>2022.01.12 16:53</time>
+                                <p>감사합니다</p>
+                                <p>멀티 (LMS)</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                                <p>9,856,751</p>
+                                <p>0</p>
+                            </a>
                         </li>
                     </ul>
-                    <div class="pagerBox">
-                        <a href="">첫 리스트</a>
-                        <a href="">이전</a>
-                        <ol>
-                            <li class="active"><a href="">1</a></li>
-                            <li><a href="">2</a></li>
-                            <li><a href="">3</a></li>
-                            <li><a href="">4</a></li>
-                            <li><a href="">5</a></li>
-                        </ol>
-                        <a href="">다음</a>
-                        <a href="">마지막 리스트</a>
-                    </div>
                 </div>
                 <footer>
                     <div>
