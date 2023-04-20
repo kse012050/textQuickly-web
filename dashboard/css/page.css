@@ -222,7 +222,9 @@
 
 /* 내역 */
 /* 내역 공통 */
-.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center; font-size: 15px; margin-bottom: 14.5px;}
+.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center; font-size: 15px;}
+.historyPage .seachBox:has( > button:first-child){margin-bottom: 14.5px;}
+.historyPage .seachBox:has( > button:not(first-child)){margin-bottom: 19.5px;}
 .historyPage .seachBox > button{font-size: 14px; font-weight: 500; color: #999; padding: 0 15px;}
 .historyPage .seachBox > button:not([class]):has(+ button){border-right: 1px solid #dedede;}
 .historyPage .seachBox > button:is(.active , :hover){color: #2de09f; font-weight: 700;}
@@ -277,7 +279,7 @@
 .historyPage .sendPage .boardBox li:not(:first-child) a::after , 
 .historyPage .sendPage .boardBox li:first-child *:nth-child(8){width: 52px;}
 .historyPage .sendPage .boardBox li:not(:first-child) a *:nth-child(2){text-align: left; text-decoration: underline;}
-/* 내역 - 전송내역 -상세 */
+/* 내역 - 전송내역 - 상세 */
 .historyPage .send-detailPage h2{margin-bottom: 80px;}
 .historyPage .send-detailPage > div{padding-right: 410px; font-size: 15px;}
 .historyPage .send-detailPage > div b{font-weight: 700;}
@@ -295,3 +297,11 @@
 .historyPage .send-detailPage > div .boardBox li *:nth-child(3){width: 58px; margin-right: 40px;}
 .historyPage .send-detailPage > div .boardBox li *:nth-child(4){width: 26px; margin-right: 50px;}
 .historyPage .send-detailPage > div .boardBox li *:nth-child(5){width: 52px;}
+/* 내역 - 예약내역 */
+.historyPage .reservationPage .boardBox li{padding: 0 40px; text-align: center;}
+.historyPage .reservationPage .boardBox li *:nth-child(1){width: 114px; margin-right: 80px;}
+.historyPage .reservationPage .boardBox li *:nth-child(2){flex: 1; margin-right: 80px; text-align: left; text-decoration: underline;}
+.historyPage .reservationPage .boardBox li *:nth-child(3){width: 75px; margin-right: 67px;}
+.historyPage .reservationPage .boardBox li *:nth-child(4){width: 86px; margin-right: 69px;}
+.historyPage .reservationPage .boardBox li *:nth-child(5){width: 54px;}
+.historyPage .reservationPage .boardBox li button{font-size: 14px; color: #999; font-weight: 500; padding: 15px 0; border: 1px solid #dedede; border-radius: 6px;}

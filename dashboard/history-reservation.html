@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내역 - 문자빨리</title>
+    <title>예약내역 - 문자빨리</title>
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
     <!-- swiper -->
@@ -77,42 +77,59 @@
             </aside>
 
             <section class="historyPage">
-                <div class="history-chargePage">
-                    <h2>충전내역</h2>
+                <div class="reservationPage">
+                    <h2>예약내역</h2>
                     <ol class="subTextBox">
-                        <li>1. 최근 5년 충전내역을 확인할 수 있습니다.</li>
-                        <li>2. 결제하신 내역을 조회하실 수 있습니다.</li>
-                        <li>3. ‘미입금’ 건은 결제일시로부터 7일 후 자동 취소 됩니다.</li>
-                        <li>4. 결과에 오류가 있을 경우 고객센터로 문의 주시기 바랍니다.</li>
+                        <li>1. ‘예약삭제’는 전송 5분전까지 취소할 수 있습니다.</li>
+                        <li>2. 삭제된 메시지는 복구가 불가합니다.</li>
+                        <li>3. 최근 3개월의 예약된 메시지를 확인 가능합니다.</li>
                     </ol>
                     <div class="seachBox">
-                        <button>오늘</button>
-                        <button>1주일</button>
-                        <button>1개월</button>
-                        <button>3개월</button>
                         <div>
-                            <input type="text">
-                            <span>~</span>
-                            <input type="text">
+                            <input type="text" readonly value="2023.02.01">
+                        </div>
+                        <span>~</span>
+                        <div>
+                            <input type="text" readonly value="2023.02.01">
+                        </div>
+                        <div>
+                            <div class="selectBox">
+                                메시지 타입
+                            </div>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="제목 또는 내용 입력">
                         </div>
                         <button class="imgBox">검색</button>
                     </div>
                     <ul class="boardBox">
                         <li>
-                            <b>일자</b>
-                            <b>충전수단</b>
-                            <b>내용</b>
-                            <b>충전금액</b>
-                            <b>보너스포인트</b>
-                            <b>비고</b>
+                            <b>전송일자</b>
+                            <b>제목</b>
+                            <b>구분</b>
+                            <b>전송예정</b>
+                            <b>전송취소</b>
                         </li>
                         <li>
-                            <time>2023.02.16</time>
-                            <p>신용카드</p>
-                            <p>충전</p>
-                            <p>123,123,123원</p>
-                            <p>123,123원</p>
-                            <p>테스트</p>
+                            <time>2022.01.12 16:53</time>
+                            <p>예약문자 테스트</p>
+                            <p>멀티 (MMS)</p>
+                            <p>9,856,751</p>
+                            <button>취소</button>
+                        </li>
+                        <li>
+                            <time>2022.01.12 16:53</time>
+                            <p>예약문자</p>
+                            <p>단문 (SMS)</p>
+                            <p>9,856,751</p>
+                            <button>취소</button>
+                        </li>
+                        <li>
+                            <time>2022.01.12 16:53</time>
+                            <p>예약문자 테스트 입니다</p>
+                            <p>단문 (SMS)</p>
+                            <p>9,856,751</p>
+                            <button>취소</button>
                         </li>
                     </ul>
                 </div>
