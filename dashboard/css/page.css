@@ -222,17 +222,17 @@
 
 /* 내역 */
 /* 내역 공통 */
-.historyPage .seachBox{display: flex; justify-content: flex-end; align-items: center; font-size: 15px;}
-.historyPage .seachBox:has( > button:first-child){margin-bottom: 14.5px;}
-.historyPage .seachBox:has( > button:not(first-child)){margin-bottom: 19.5px;}
-.historyPage .seachBox > button{font-size: 14px; font-weight: 500; color: #999; padding: 0 15px;}
-.historyPage .seachBox > button:not([class]):has(+ button){border-right: 1px solid #dedede;}
-.historyPage .seachBox > button:is(.active , :hover){color: #2de09f; font-weight: 700;}
-.historyPage .seachBox :is(input[readonly] , .selectBox){width: 150px;}
-.historyPage .seachBox input:not([readonly]){width: 260px;}
-.historyPage .seachBox :is(.selectBox , input:not([readonly])){margin-left: 15px;}
-.historyPage .seachBox span{margin: 0 7px;}
-.historyPage .seachBox .imgBox{width: 26px; height: 26px; background-image: url('../images/icon-search.png'); margin-left: 10px;}
+.historyPage .searchBox{display: flex; justify-content: flex-end; align-items: center; font-size: 15px;}
+.historyPage .searchBox:has( > button:first-child){margin-bottom: 14.5px;}
+.historyPage .searchBox:has( > *:first-child:not(button)){margin-bottom: 19.5px;}
+.historyPage .searchBox > button{font-size: 14px; font-weight: 500; color: #999; padding: 0 15px;}
+.historyPage .searchBox > button:not([class]):has(+ button){border-right: 1px solid #dedede;}
+.historyPage .searchBox > button:is(.active , :hover){color: #2de09f; font-weight: 700;}
+.historyPage .searchBox :is(input[readonly] , .selectBox){width: 150px;}
+.historyPage .searchBox input:not([readonly]){width: 260px;}
+.historyPage .searchBox :is(.selectBox , input:not([readonly])){margin-left: 15px;}
+.historyPage .searchBox span{margin: 0 7px;}
+.historyPage .searchBox .imgBox{width: 26px; height: 26px; background-image: url('../images/icon-search.png'); margin-left: 10px;}
 .historyPage .pagerBox{display: flex; justify-content: center; align-items: center; margin-top: 60px;}
 .historyPage .pagerBox > a{text-indent: -9999px; width: 24px; height: 24px; background-repeat: no-repeat; background-position: center; background-size: cover;}
 .historyPage .pagerBox > a:nth-of-type(1){background-image: url('../images/icon-first.png'); margin-right: 5px;}
