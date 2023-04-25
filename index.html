@@ -46,8 +46,83 @@
             <img src="images/main-img.png" alt="">
         </div>
 
-        <section class="contentSize">
+        <section class="contentSize sendArea">
             <h2 class="title01">문자 한번 보내보시겠어요?</h2>
+            <form>
+                <fieldset>
+                    <ul class="inputBox-main">
+                        <li>
+                            <label>발신번호</label>
+                            <div>
+                                <input type="text" placeholder="누가 보내나요? 발신번호 입력">
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">내용</label>
+                            <div>
+                                <input type="text" placeholder="제목 입력 (단문일 경우 나타나지 않습니다.)">
+                            </div>
+                            <div>
+                                <textarea name="" class="mainTextArea"
+                                    placeholder="내용 입력?&#13;&#10;- 내용이 길 경우 자동으로 장문(LMS) 전환?&#13;&#10;- 이미지 첨부 할 경우 자동으로 멀티(MMS) 전환"></textarea>
+                            </div>
+                            <div class="checkBox">
+                                <input type="checkbox" checked>
+                                <label for=""><em>광고성 문자</em> 일 경우 체크</label>
+                            </div>
+                            <div class="buttonBox">
+                                <span class="byte">0 <mark>90</mark></span>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">이미지첨부</label>
+                            <div>
+                                <input type="radio">
+                                <label for="">없음</label>
+                                <input type="radio">
+                                <label for="">이미지</label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div>
+                        <div>
+                            <label title="단문">입력한 발신번호</label>
+                            <div>
+                                <textarea placeholder="미리보기&#13;&#10;입력한 내용 표시"></textarea>
+                                <p>
+                                    *실제로 문자는 발송되지 않으며,<br>
+                                    로그인 후 이용가능합니다.
+                                </p>
+                            </div>
+                            <input type="submit" value="전송하기">
+                        </div>
+                    </div>
+                    <ul class="inputBox-main">
+                        <li>
+                            <label for="">수신인 지정</label>
+                            <div>
+                                <input type="text" placeholder="받을 사람 번호 입력">
+                                <button>추가</button>
+                            </div>
+                            <div>
+                                <textarea class="mainTextArea2"></textarea>
+                            </div>
+                            <div class="buttonBox">
+                                <span class="count">0</span>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="">전송시각</label>
+                            <div>
+                                <input type="radio">
+                                <label for="">즉시전송</label>
+                                <input type="radio">
+                                <label for="">예약전송</label>
+                            </div>
+                        </li>
+                    </ul>
+                </fieldset>
+            </form>
         </section>
 
         <section class="noticeArea contentSize">

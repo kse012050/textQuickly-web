@@ -45,23 +45,29 @@ fieldset > p{display: flex; align-items: center; font-size: 15px; font-weight: 4
 fieldset > p b{width: 70px; font-weight: 700;}
 fieldset ul li :is(div :is(input , textarea , select) , .termsBox){box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
 fieldset ul li :is(div textarea , .termsBox){padding: 20px; align-items: flex-start;}
-fieldset ul li div textarea{height: 300px;}
+fieldset ul li div textarea:not([class]){height: 300px;}
+/* 메인 페이지 전용 */
+fieldset .inputBox-main{flex: 1; display: flex; flex-direction: column; padding-top: 20px;}
+fieldset .inputBox-main li .mainTextArea{height: 195px;}
+fieldset .inputBox-main li .mainTextArea2{height: 308px;}
+/* fieldset .inputBox-main li:has(textarea){flex: 1; display: flex; flex-direction: column;}
+fieldset .inputBox-main li:has(textarea) textarea{flex: 1;} */
 fieldset .inputBox{display: flex; flex-wrap: wrap; justify-content: space-between;}
-fieldset .inputBox li:not(.half){width: 100%;}
-fieldset .inputBox li.half{width: 47.79%;}
-fieldset .inputBox li > label:first-of-type{display: flex; font-weight: 700;}
-fieldset .inputBox li:not(.row) > label:first-of-type{margin-bottom: 15px;}
-fieldset .inputBox li:not(:first-child , .half:first-child , .half:first-child + .half , .row) > label:first-of-type{margin-top: 30px;}
-fieldset .inputBox li div{display: flex;}
-fieldset .inputBox li div:not(:is(.buttonBox , .checkBox)){gap: 10px;}
-fieldset .inputBox li div :is(input , select){height: 50px; padding: 0 20px;}
-fieldset .inputBox li div :is(input , textarea)::placeholder{color: #999;}
-fieldset .inputBox li div :is(input , textarea){flex: 1;}
-fieldset .inputBox li div:has(input) ~ div:not(.checkBox){margin-top: 10px;}
-fieldset .inputBox li div:not(:is( textarea , .termsBox)){align-items: center;}
-fieldset .inputBox li div:has(button , mark , time):has(input[type="text"]){position: relative;}
-fieldset .inputBox li div:has(button , mark , time) input + :is(button , mark , time){position: absolute; top: 50%; transform: translateY(-50%);}
-fieldset .inputBox li div:has(button) input + button{right: 5px;}
+fieldset [class*="inputBox"] li:not(.half){width: 100%;}
+fieldset [class*="inputBox"] li.half{width: 47.79%;}
+fieldset [class*="inputBox"] li > label:first-of-type{display: flex; font-weight: 700;}
+fieldset [class*="inputBox"] li:not(.row) > label:first-of-type{margin-bottom: 15px;}
+fieldset [class*="inputBox"] li:not(:first-child , .half:first-child , .half:first-child + .half , .row) > label:first-of-type{margin-top: 30px;}
+fieldset [class*="inputBox"] li div{display: flex;}
+fieldset [class*="inputBox"] li div:not(:is(.buttonBox , .checkBox)){gap: 10px;}
+fieldset [class*="inputBox"] li div :is(input , select){height: 50px; padding: 0 20px;}
+fieldset [class*="inputBox"] li div :is(input , textarea)::placeholder{color: #999;}
+fieldset [class*="inputBox"] li div :is(input , textarea){flex: 1; line-height: 22px;}
+fieldset [class*="inputBox"] li div:has(input) ~ div:not(.checkBox){margin-top: 10px;}
+fieldset [class*="inputBox"] li div:not(:is( textarea , .termsBox)){align-items: center;}
+fieldset [class*="inputBox"] li div:has(button , mark , time):has(input[type="text"]){position: relative;}
+fieldset [class*="inputBox"] li div:has(button , mark , time) input + :is(button , mark , time){position: absolute; top: 50%; transform: translateY(-50%);}
+fieldset [class*="inputBox"] li div:has(button) input + button{right: 5px;}
 /* fieldset .inputBox li div:has(button) button{font-size: 14px; font-weight: 400; color: #999; height: 40px; padding: 0 15px; background-color: white; border: 1px solid #dedede; border-radius: 6px;} */
 fieldset button{font-size: 14px; font-weight: 400; color: #999; height: 40px; padding: 0 15px; background-color: white; border: 1px solid #dedede; border-radius: 6px;}
 fieldset .buttonBox{gap: 10px 7px;}
@@ -75,12 +81,16 @@ fieldset .inputBox li.row div{flex: 1;}
 fieldset .inputBox li.row:not(:has(input[type="radio"])) label:first-of-type{margin-right: 30px;}
 fieldset .inputBox li.row:has(input[type="radio"]) label:first-of-type{margin-right: 40px;}
 fieldset .inputBox li.row:has(input[type="radio"]) label:not(:is(:first-of-type , :last-of-type)){margin-right: 30px;}
+fieldset [class*="inputBox"] li:has(.checkBox){position: relative;}
+fieldset [class*="inputBox"] li .checkBox{position: absolute; right: 0; top: 30px;}
+fieldset [class*="inputBox"] li .buttonBox .count::before{content: '총 ';}
+fieldset [class*="inputBox"] li .buttonBox .count::after{content: '건';}
 fieldset input[type="submit"]{margin: 0 auto;}
 fieldset:not(:has(.inputBox)) .buttonBox{display: flex;}
 
-:is(.inputCase , .historyPage .seachBox :is(input , .selectBox)){height: 50px; padding: 0 15px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
-:is(.inputCase , .historyPage .seachBox :is(input , .selectBox))::placeholder{color: #999;}
-.historyPage .seachBox .selectBox{display: inline-flex; align-items: center;}
+:is(.inputCase , .historyPage .searchBox :is(input , .selectBox)){height: 50px; padding: 0 15px; box-sizing: border-box; background-color: #f8f8f8; border: 1px solid #f0f0f0; border-radius: 6px;}
+:is(.inputCase , .historyPage .searchBox :is(input , .selectBox))::placeholder{color: #999;}
+.historyPage .searchBox .selectBox{display: inline-flex; align-items: center;}
 
 
 /* 해더 공통 */

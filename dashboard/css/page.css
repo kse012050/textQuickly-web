@@ -142,10 +142,6 @@
 /* 문자 보내기 - 입력 */
 .messagePage > .basicPage .inputArea{padding-right: 410px;}
 .messagePage > .basicPage .inputArea hr{border-bottom: none; border-top: 1px solid #dedede; margin: 38.5px 0 39.5px;}
-.messagePage > .basicPage .inputArea .inputBox li:has(.checkBox){position: relative;}
-.messagePage > .basicPage .inputArea .inputBox li .checkBox{position: absolute; right: 0; top: 30px;}
-.messagePage > .basicPage .inputArea .inputBox li .buttonBox .count::before{content: '총 ';}
-.messagePage > .basicPage .inputArea .inputBox li .buttonBox .count::after{content: '건';}
 /* 문자 보내기 - 전송 예상 결과 */
 .messagePage > .basicPage .sendResult strong{margin-bottom: 19.5px;}
 .messagePage > .basicPage .sendResult .boardBox li{padding-left: 40px; text-align: center;}

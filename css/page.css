@@ -14,6 +14,20 @@
 .mainPage .topArea div a:nth-child(2){border: 2px solid white; box-sizing: border-box;}
 .mainPage .topArea img{max-width: 1080px;}
 
+/* 메인페이지 - 문자 보내기 */
+.mainPage .sendArea h2{margin-bottom: 80px;}
+.mainPage .sendArea fieldset{display: flex;}
+.mainPage .sendArea fieldset .inputBox-main{flex: 1;}
+.mainPage .sendArea fieldset > div{width: 280px; margin: 0 90px;  padding: 10px; background-color: #f7f7f7; border-radius: 30px; box-shadow: 7px 10px 40px 0 rgba(0, 0, 0, 0.2); box-sizing: border-box;}
+.mainPage .sendArea fieldset > div > div{height: 100%; padding: 20px 15px 15px; border-radius: 25px; background-color: #fff; box-sizing: border-box;}
+.mainPage .sendArea fieldset > div > div label{font-size: 14px; color: #999; display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;}
+.mainPage .sendArea fieldset > div > div label::after{content: attr(title); font-size: 13px; color: #2de09f; font-weight: 700;}
+.mainPage .sendArea fieldset > div > div > div{position: relative; margin-bottom: 10px;}
+.mainPage .sendArea fieldset > div > div > div textarea{font-size: 14px; line-height: 20px; width: 100%; height: 420px; padding: 15px 15px 67px; border-radius: 6px; background-color: #f5f5f5; box-sizing: border-box; border: none;}
+.mainPage .sendArea fieldset > div > div > div textarea::placeholder{color: #999;}
+.mainPage .sendArea fieldset > div > div > div p{position: absolute; width: 100%; left: 0; bottom: 15px; font-size: 12px; line-height: 18px; text-align: center; color: #00a56b;}
+.mainPage .sendArea fieldset > div > div > input[type="submit"]{width: 100%; height: 40px; font-size: 13px; color: #fff; font-weight: 800; border-radius: 6px; background-color: #2de09f; border: none;}  
+
 /* 메인페이지 - 공지사항 , 이벤트 공통 */
 .mainPage :is(.noticeArea , .eventArea) h2{margin-bottom: 60px;}
 .mainPage :is(.noticeArea , .eventArea) ul{display: flex; margin-bottom: 60px;}
