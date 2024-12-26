@@ -21,8 +21,8 @@ mark:not([class]){color: #2de09f;}
 
 /* 체크박스 , 라디오 박스 */
 input[type="checkbox"] , input[type="radio"]{display: none;}
-:is(input[type="checkbox"] , input[type="radio"]) + label{display: inline-flex; align-items: center;}
-:is(input[type="checkbox"] , input[type="radio"]) + label::before{content: ''; width: 20px; height: 20px; margin-right: 10px; background-repeat: no-repeat; background-position: center; background-size: cover;}
+:is(input[type="checkbox"] , input[type="radio"]) + label{display: inline-flex; align-items: center; cursor: pointer;}
+:is(input[type="checkbox"] , input[type="radio"]) + label::before{content: ''; width: 20px; height: 20px; margin-right: 10px; background-repeat: no-repeat; background-position: center; background-size: cover; cursor: pointer;}
 input[type="checkbox"]:checked + label::before{background-image: url('../images/icon-check-chekced.png');}
 input[type="radio"] + label::before{background-image: url('../images/icon-radio.png');}
 input[type="radio"]:checked + label::before{background-image: url('../images/icon-radio-chekced.png');}

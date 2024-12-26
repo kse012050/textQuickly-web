@@ -104,7 +104,7 @@
 .myPage .enterPage > div > div:not(.infoArea) img{width: 160px; margin-bottom: 30px;}
 /* 마이페이지 - 기업 - 전환 */
 .myPage .enterPage .transformArea strong{line-height: 30px; margin-bottom: 30px;}
-.myPage .enterPage .transformArea button{width: 230px; margin: 0 auto;}
+.myPage .enterPage .transformArea :is(button, a){width: 230px; margin: 0 auto;}
 /* 마이페이지 - 기업 - 심사 중 */
 .myPage .enterPage .reviewArea strong{margin-bottom: 20px;}
 .myPage .enterPage .reviewArea p{font-size: 15px; font-weight: 400;}
@@ -127,7 +127,7 @@
 .myPage > .secessionPage .infoArea ul li img{width: 130px; margin-bottom: 30px;}
 .myPage > .secessionPage .infoArea ul li strong{display: block; font-size: 15px; font-weight: 700; line-height: 20px; margin-bottom: 15px;}
 .myPage > .secessionPage .infoArea ul li p{font-size: 14px; font-weight: 400; color: #999; line-height: 18px;}
-.myPage > .secessionPage .infoArea + button{width: 285px; margin: 60px auto 0;}
+.myPage > .secessionPage .infoArea + :is(button, a){width: 285px; margin: 60px auto 0;}
 
 /* 마이페이지 - 탈퇴 - 입력 */
 .myPage > .secessionPage fieldset .inputBox li:has(small) > label:first-child{margin-bottom: 7px;}
